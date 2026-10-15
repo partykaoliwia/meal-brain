@@ -27,7 +27,7 @@ Planowanie posiłków, gromadzenie przepisów i organizacja zakupów przy napię
 | **S4** | **Szukanie w bazie** | „Co zrobię z kurczakiem i ryżem w 20 min?” → agent przeszukuje bazę (RAG) i proponuje dania. |
 | **S5** | **Szukanie w internecie** | Gdy baza nie wystarcza lub użytkownik prosi o „coś nowego” → agent proponuje kilka przepisów z linkiem do źródła → po akceptacji import jak w S2. |
 | **S6** | **Plan tygodnia z kalendarzem** | Zajęty dzień → szybkie danie, ugotowanie dzień wcześniej porcji na 2 dni lub jedzenie na mieście; wolny dzień → coś dłuższego; wyjście wieczorem → bez posiłku w domu. |
-| **S7** | **Lista zakupów** | Zsumowane składniki z planu, ujednolicone jednostki, podział na działy sklepu |
+| **S7** | **Lista zakupów** | Zsumowane składniki z planu, ujednolicone jednostki, podział na działy sklepu. |
 
 ## 4. Rola agenta AI
 
@@ -50,8 +50,8 @@ Problem wymaga schematu **cel → decyzja w locie → działanie**, a nie sztywn
 
 * **Model:** musi umieć korzystać z narzędzi i odczytywać obrazy; konkretny wybierzemy na etapie implementacji.
 * **Tool calling:** narzędzia do importu przepisów (ze zdjęcia, tekstu lub strony) i zapisu ich w bazie; dokładny zestaw ustalimy podczas implementacji.
-* **MCP:** własny serwer „Planer” (kalendarz z pliku `.ics`, plan tygodnia, lista zakupów) oraz gotowe serwery do wyszukiwania w internecie i pobierania stron. Planowanie jest osobną usługą, z której może korzystać nie tylko nasz agent, a gotowe serwery pozwalają nie pisać od zera integracji z internetem.
-* **RAG:** baza przepisów z wyszukiwaniem po znaczeniu - wstępny zbiór + przepisy importowane przez użytkownika.
+* **MCP:** agent korzysta z własnego serwera „Planer”, który odpowiada za kalendarz (plik `.ics`), plan tygodnia i listę zakupów, oraz z gotowych serwerów do wyszukiwania i pobierania stron internetowych. Dzięki temu planowanie działa jako osobna usługa, a integracji z internetem nie musimy pisać od zera.
+* **RAG:** baza przepisów (wstępny zbiór oraz przepisy dodane przez użytkownika), przeszukiwana po znaczeniu, a nie tylko po słowach.
 * **Interfejs:** konwersacyjny (konsola lub minimalny czat).
 
 ## 5. Zakres
@@ -61,7 +61,7 @@ Problem wymaga schematu **cel → decyzja w locie → działanie**, a nie sztywn
 | Obszar | Co dokładnie |
 |---|---|
 | Import (S1–S3) | zdjęcie, link, tekst; dopytywanie o braki; zatwierdzenie przed zapisem |
-| Baza (S4) | wstępny zbiór przepisów; wyszukiwanie semantyczne + filtry (składnik, czas, tagi) |
+| Baza (S4) | wstępny zbiór przepisów; wyszukiwanie po znaczeniu + filtry (składnik, czas, tagi) |
 | Internet (S5) | kilka propozycji ze źródłem; zapis tylko po akceptacji; ochrona przed ukrytymi poleceniami na stronach (prompt injection) |
 | Plan tygodnia (S6) | kalendarz `.ics` przez MCP; jeden główny posiłek dziennie |
 | Lista zakupów (S7) | suma składników, słownik jednostek (g, kg, ml, l, szt., łyżka, łyżeczka, szklanka), działy sklepu |
