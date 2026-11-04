@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Sos jogurtowy z cytryn\u0105",
+    "servings": 2,
+    "times": {
+      "total": {
+        "minMinutes": 0,
+        "maxMinutes": 5
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "jogurtu naturalnego",
+        "amount": {
+          "kind": "exact",
+          "value": 150,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "150 g jogurtu naturalnego"
+      },
+      {
+        "id": "i2",
+        "name": "soku z cytryny",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": "ml",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "20 ml soku z cytryny"
+      },
+      {
+        "id": "i3",
+        "name": "koperek",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "koperek do smaku"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Do jogurtu dodaj sok z cytryny.",
+        "ingredientIds": [
+          "i1",
+          "i2"
+        ],
+        "sourceText": "Do jogurtu dodaj 30 ml soku z cytryny."
+      },
+      {
+        "id": "s2",
+        "text": "Wsyp koperek i dok\u0142adnie wymieszaj.",
+        "ingredientIds": [
+          "i3"
+        ],
+        "sourceText": "Wsyp koperek i dok\u0142adnie wymieszaj."
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "c1",
+        "target": {
+          "type": "ingredientAmount",
+          "id": "i2"
+        },
+        "candidates": [
+          {
+            "valueText": "20 ml",
+            "sourceText": "20 ml soku z cytryny"
+          },
+          {
+            "valueText": "30 ml",
+            "sourceText": "Do jogurtu dodaj 30 ml soku z cytryny."
+          }
+        ]
+      }
+    ]
+  }
+}

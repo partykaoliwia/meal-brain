@@ -1,0 +1,316 @@
+{
+  "suite_id": "finalists-v1",
+  "reviewer": "Ocena semantyczna asystenta na podstawie pełnych logów i kryteriów ustalonych przed próbą; nie jest samooceną badanych modeli.",
+  "prompt_sha256": "0E95DE93D1EA088F4FE4DF987221B9C43E753BBED71400D9246DE11E262D819C",
+  "inputs_sha256": "AD05D54FCBAD21BBD0ABC2EF9EAEFEC65439493A18366D47305862A61DFAA729",
+  "protocol_sha256": "F46F6BB142BB6BFE3D494CBD9869015F8F11169C01970B8C6F76B4C4BE1D9282",
+  "decision": "no_eligible_candidate",
+  "models": [
+    {
+      "model": "gemma4:e2b",
+      "run": "20261104-163329-bc9bfc3bc5d542c692a56e03d3f61d4d",
+      "passed_cases": 3,
+      "total_cases": 12,
+      "passed_executions": 3,
+      "total_executions": 20,
+      "critical_executions": 8,
+      "technical_complete": true,
+      "mandatory_cases_passed": false,
+      "median_first_response_ms": 4746,
+      "p90_first_response_ms": 6949,
+      "quality_gate_passed": false,
+      "latency_gate_passed": true,
+      "eligible": false,
+      "cases": [
+        {
+          "case_id": "FT-001",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-002",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-003",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-004",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-005",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 2
+        },
+        {
+          "case_id": "FT-006",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-007",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-008",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-009",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-010",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 3
+        },
+        {
+          "case_id": "FT-011",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 3
+        },
+        {
+          "case_id": "FT-012",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        }
+      ]
+    },
+    {
+      "model": "qwen3.5:9b",
+      "run": "20261104-163631-17fc1bede67c4c47b7fd79ae99bb86a4",
+      "passed_cases": 4,
+      "total_cases": 12,
+      "passed_executions": 4,
+      "total_executions": 20,
+      "critical_executions": 6,
+      "technical_complete": true,
+      "mandatory_cases_passed": false,
+      "median_first_response_ms": 33499,
+      "p90_first_response_ms": 38700,
+      "quality_gate_passed": false,
+      "latency_gate_passed": false,
+      "eligible": false,
+      "cases": [
+        {
+          "case_id": "FT-001",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-002",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-003",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-004",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-005",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-006",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-007",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-008",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-009",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-010",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 3
+        },
+        {
+          "case_id": "FT-011",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 3
+        },
+        {
+          "case_id": "FT-012",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        }
+      ]
+    },
+    {
+      "model": "gemma4:12b",
+      "run": "20261104-171058-4613c4007ccf47a6a653036ce46a483c",
+      "passed_cases": 7,
+      "total_cases": 12,
+      "passed_executions": 11,
+      "total_executions": 20,
+      "critical_executions": 0,
+      "technical_complete": true,
+      "mandatory_cases_passed": false,
+      "median_first_response_ms": 32775,
+      "p90_first_response_ms": 46538,
+      "quality_gate_passed": false,
+      "latency_gate_passed": false,
+      "eligible": false,
+      "cases": [
+        {
+          "case_id": "FT-001",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-002",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-003",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-004",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-005",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 3,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-006",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-007",
+          "passed": false,
+          "passed_executions": 0,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-008",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-009",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-010",
+          "passed": true,
+          "passed_executions": 3,
+          "executions": 3,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-011",
+          "passed": true,
+          "passed_executions": 3,
+          "executions": 3,
+          "critical_executions": 0
+        },
+        {
+          "case_id": "FT-012",
+          "passed": true,
+          "passed_executions": 1,
+          "executions": 1,
+          "critical_executions": 0
+        }
+      ]
+    }
+  ]
+}

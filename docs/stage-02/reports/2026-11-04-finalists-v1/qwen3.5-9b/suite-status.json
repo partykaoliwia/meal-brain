@@ -1,0 +1,185 @@
+{
+  "suite_id": "finalists-v1",
+  "results": [
+    {
+      "CaseId": "FT-001",
+      "Repetition": 1,
+      "ConversationId": "242b182537f541f7a08abfee5df5317f",
+      "Status": "completed",
+      "CompletedTurns": 2,
+      "FirstResponseMs": 33557,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-002",
+      "Repetition": 1,
+      "ConversationId": "1759a5d168924f01a791a9e5efafee4a",
+      "Status": "completed",
+      "CompletedTurns": 3,
+      "FirstResponseMs": 35255,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-002",
+      "Repetition": 2,
+      "ConversationId": "aae0c1c700034effb24b2a27bddb60fc",
+      "Status": "completed",
+      "CompletedTurns": 3,
+      "FirstResponseMs": 22548,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-002",
+      "Repetition": 3,
+      "ConversationId": "d5b7a86e198d487b81ca0320e59ffa92",
+      "Status": "completed",
+      "CompletedTurns": 3,
+      "FirstResponseMs": 22991,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-003",
+      "Repetition": 1,
+      "ConversationId": "a52ad7da49d8406d938380f0baaebbc4",
+      "Status": "completed",
+      "CompletedTurns": 2,
+      "FirstResponseMs": 33441,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-004",
+      "Repetition": 1,
+      "ConversationId": "817ee861a2374f3ba9a8e15118a5284c",
+      "Status": "completed",
+      "CompletedTurns": 1,
+      "FirstResponseMs": 36735,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-005",
+      "Repetition": 1,
+      "ConversationId": "a1f95f0608884983aa3288ae9a53de30",
+      "Status": "completed",
+      "CompletedTurns": 3,
+      "FirstResponseMs": 52365,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-005",
+      "Repetition": 2,
+      "ConversationId": "7028ebc2ea5546379767fbf74427aa98",
+      "Status": "completed",
+      "CompletedTurns": 3,
+      "FirstResponseMs": 39214,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-005",
+      "Repetition": 3,
+      "ConversationId": "34688acd84554d3e9e11ee3b2491f386",
+      "Status": "completed",
+      "CompletedTurns": 3,
+      "FirstResponseMs": 39058,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-006",
+      "Repetition": 1,
+      "ConversationId": "8e1779073cb2415fae8f3d9a2dcc6979",
+      "Status": "completed",
+      "CompletedTurns": 2,
+      "FirstResponseMs": 27093,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-007",
+      "Repetition": 1,
+      "ConversationId": "db3385c6d2174849a4ee832ffa99e038",
+      "Status": "completed",
+      "CompletedTurns": 1,
+      "FirstResponseMs": 13979,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-008",
+      "Repetition": 1,
+      "ConversationId": "725e9a2f8c594208892fea63229be245",
+      "Status": "completed",
+      "CompletedTurns": 3,
+      "FirstResponseMs": 26695,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-009",
+      "Repetition": 1,
+      "ConversationId": "506a2cf0a3ad4532b6e6e2db31a1e57b",
+      "Status": "completed",
+      "CompletedTurns": 1,
+      "FirstResponseMs": 33733,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-010",
+      "Repetition": 1,
+      "ConversationId": "27f680849a9e4d9fbf0cd48db8a42084",
+      "Status": "completed",
+      "CompletedTurns": 2,
+      "FirstResponseMs": 38700,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-010",
+      "Repetition": 2,
+      "ConversationId": "0be774b80de747328ee48101da8acaf9",
+      "Status": "completed",
+      "CompletedTurns": 2,
+      "FirstResponseMs": 24614,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-010",
+      "Repetition": 3,
+      "ConversationId": "637f71548d174cb9ad94b13cb7d427dd",
+      "Status": "completed",
+      "CompletedTurns": 2,
+      "FirstResponseMs": 24875,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-011",
+      "Repetition": 1,
+      "ConversationId": "8e5db96643504bd394dbb95b3ef902bf",
+      "Status": "completed",
+      "CompletedTurns": 1,
+      "FirstResponseMs": 32986,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-011",
+      "Repetition": 2,
+      "ConversationId": "8da77815490e48abb15eafff99e34f0b",
+      "Status": "completed",
+      "CompletedTurns": 1,
+      "FirstResponseMs": 19682,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-011",
+      "Repetition": 3,
+      "ConversationId": "f3be9d7166994e17b1462943c985a426",
+      "Status": "completed",
+      "CompletedTurns": 1,
+      "FirstResponseMs": 19804,
+      "Error": null
+    },
+    {
+      "CaseId": "FT-012",
+      "Repetition": 1,
+      "ConversationId": "b2b6054ff9224f39934d7d386ed46c52",
+      "Status": "completed",
+      "CompletedTurns": 2,
+      "FirstResponseMs": 27491,
+      "Error": null
+    }
+  ]
+}

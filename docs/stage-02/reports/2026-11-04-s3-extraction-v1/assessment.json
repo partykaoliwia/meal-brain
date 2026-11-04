@@ -1,0 +1,119 @@
+{
+  "assessmentVersion": 1,
+  "reviewer": "assistant",
+  "reviewDate": "2026-11-04",
+  "runId": "20261104-182757-extract-81d9369fa6e34a5a88090c51258a70f5",
+  "variant": "s3-extraction-v1",
+  "model": "gemma4:12b",
+  "dataUse": "development",
+  "scope": "Three independent initial extractions; no correction, conversation or approval flow tested.",
+  "summary": {
+    "imports": 3,
+    "completeApiResponses": 3,
+    "deserializedDocuments": 3,
+    "domainValidDocumentsUnderOriginalRules": 2,
+    "predefinedCasesEvaluated": 2,
+    "predefinedCasesPassed": 1,
+    "additionalPostHocCases": 1,
+    "additionalPostHocCasesWithSemanticOmissions": 1,
+    "elapsedMedianMs": 117037,
+    "elapsedTotalMs": 432123
+  },
+  "cases": [
+    {
+      "inputId": 1,
+      "caseId": "MB-002",
+      "expectationsDefinedBeforeRun": true,
+      "semanticVerdict": "pass",
+      "originalValidation": {
+        "status": "needs_clarification",
+        "errors": 0,
+        "missingFields": 3,
+        "reviewIssues": 0
+      },
+      "observations": [
+        "All five ingredients and explicit quantities preserved.",
+        "Servings, pasta amount and cream amount correctly remain unknown.",
+        "Salt to taste does not cause a numeric quantity question."
+      ],
+      "timing": {
+        "elapsedMs": 206068,
+        "loadMs": 22708.540,
+        "promptEvalMs": 97259.544,
+        "promptTokens": 3035,
+        "outputTokens": 912,
+        "evalMs": 85881.616
+      }
+    },
+    {
+      "inputId": 2,
+      "caseId": "MB-005",
+      "expectationsDefinedBeforeRun": true,
+      "semanticVerdict": "fail",
+      "originalValidation": {
+        "status": "invalid_output",
+        "errors": 1,
+        "missingFields": 1,
+        "reviewIssues": 0
+      },
+      "guardVerdict": "correctly_blocked",
+      "observations": [
+        "Conflict 150 g versus 200 g correctly detected with both source excerpts.",
+        "Effective ingredient amount is also a fabricated range 150-200 g; contract requires unknown.",
+        "All five ingredients including garlic 5 g preserved.",
+        "Application did not silently accept or repair the invalid document."
+      ],
+      "timing": {
+        "elapsedMs": 117037,
+        "loadMs": 57.554,
+        "promptEvalMs": 10039.117,
+        "promptTokens": 3077,
+        "outputTokens": 1093,
+        "evalMs": 104490.714
+      }
+    },
+    {
+      "inputId": 3,
+      "caseId": "S3-TOAST-001",
+      "expectationsDefinedBeforeRun": false,
+      "semanticVerdict": "partial",
+      "originalValidation": {
+        "status": "needs_clarification",
+        "errors": 0,
+        "missingFields": 1,
+        "reviewIssues": 2
+      },
+      "observations": [
+        "Three ingredients and all preparation actions preserved; no invented servings.",
+        "Explicit toasting duration 2 min preserved in a step but omitted from times.cooking.",
+        "Unit plastry is valid source data missing from the application's original unit list.",
+        "Amount text Trochę is faithful to source but requires human review under application policy.",
+        "Total 0-10 represents an upper bound; one-sided duration representation was underspecified in contract v1."
+      ],
+      "timing": {
+        "elapsedMs": 109018,
+        "loadMs": 123.340,
+        "promptEvalMs": 42715.893,
+        "promptTokens": 2996,
+        "outputTokens": 652,
+        "evalMs": 63840.840
+      }
+    }
+  ],
+  "postReviewChanges": {
+    "activeVariant": "s3-extraction-v2",
+    "validationVersion": "recipe-draft-validation-v2",
+    "schemaVersion": 1,
+    "newModelOutputsAvailable": false,
+    "offlineChecksPassed": true,
+    "offlineModelCalls": 0,
+    "capturedOutputRegressionChecks": 3,
+    "notes": [
+      "Unit list extended with plaster, plastry, plastrów; no quantity conversion.",
+      "Original captured MB-005 still fails validation.",
+      "Only the unsupported-unit review issue disappears for captured toast output; missing cooking time is not repaired.",
+      "Separate extraction prompt v2 adds a conflict example, explicit cooking-time mapping and upper-bound duration convention.",
+      "Model effectiveness of new prompt remains untested."
+    ]
+  }
+}

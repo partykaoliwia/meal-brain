@@ -1,0 +1,204 @@
+{
+  "assessmentVersion": 1,
+  "reviewer": "assistant",
+  "reviewDate": "2026-11-04",
+  "runId": "20261104-202420-extract-22972480faeb4932834c1b7af162c908",
+  "variant": "s3-extraction-v3",
+  "validationVersion": "recipe-draft-validation-v3",
+  "suiteId": "s3-extraction-check-v2",
+  "model": "gemma4:12b",
+  "dataUse": "development_regression",
+  "expectationsDefinedBeforeRun": true,
+  "sourcesMatchFrozenSuite": true,
+  "summary": {
+    "imports": 6,
+    "completeApiResponses": 6,
+    "deserializedDocuments": 6,
+    "domainValidDocuments": 6,
+    "semanticPasses": 5,
+    "semanticFailures": 1,
+    "exactTimeErrors": 0,
+    "changedSourceQuoteCases": 1,
+    "gateRequiredPasses": 6,
+    "gatePassed": false,
+    "elapsedMedianMs": 68765.5,
+    "elapsedRecipeMedianMs": 70351,
+    "elapsedTotalMs": 486643.0,
+    "repetitionsPerCase": 1
+  },
+  "observations": {
+    "previousPasses": 2,
+    "currentPasses": 5,
+    "previouslyIncorrectExactTimesCorrected": 4,
+    "changedQuoteStillFlagged": true,
+    "injectionAttemptsTested": 1,
+    "observedInjectedInstructionIgnored": true,
+    "newIngredientConflictCorrectlyRetained": true,
+    "independentGeneralizationMeasured": false
+  },
+  "cases": [
+    {
+      "inputId": 1,
+      "caseId": "EX-001",
+      "semanticPass": true,
+      "notes": "Zaliczenie: trzy składniki, wszystkie czasy, przykrycie i podanie od razu zgodne ze źródłem.",
+      "expectedTotalMinutes": 30,
+      "actualTotal": {
+        "minMinutes": 30,
+        "maxMinutes": 30
+      },
+      "originalValidation": {
+        "status": "ready_for_review",
+        "errors": [],
+        "missingFields": [],
+        "reviewIssues": []
+      },
+      "timing": {
+        "elapsedMs": 213042,
+        "loadMs": 22698.978,
+        "promptEvalMs": 113003.785,
+        "evalMs": 76973.188,
+        "promptTokens": 3564,
+        "outputTokens": 780
+      }
+    },
+    {
+      "inputId": 2,
+      "caseId": "EX-002",
+      "semanticPass": true,
+      "notes": "Zaliczenie: czas 5–5 poprawiony; zachowano dwa braki, świeży koperek i podanie na zimno.",
+      "expectedTotalMinutes": 5,
+      "actualTotal": {
+        "minMinutes": 5,
+        "maxMinutes": 5
+      },
+      "originalValidation": {
+        "status": "needs_clarification",
+        "errors": [],
+        "missingFields": [
+          "servings: podaj liczbę porcji.",
+          "ingredients[i2].amount: podaj ilość (jogurt naturalny)."
+        ],
+        "reviewIssues": []
+      },
+      "timing": {
+        "elapsedMs": 70351,
+        "loadMs": 50.538,
+        "promptEvalMs": 4128.236,
+        "evalMs": 65919.705,
+        "promptTokens": 3509,
+        "outputTokens": 658
+      }
+    },
+    {
+      "inputId": 3,
+      "caseId": "EX-003",
+      "semanticPass": false,
+      "notes": "Niezaliczenie: czas 8–8 i zakres twarogu poprawne, ale sourceText Rozsmarzuj nadal nie jest cytatem ze źródła Rozsmaruj. Walidator prawidłowo kieruje do przeglądu.",
+      "expectedTotalMinutes": 8,
+      "actualTotal": {
+        "minMinutes": 8,
+        "maxMinutes": 8
+      },
+      "originalValidation": {
+        "status": "needs_clarification",
+        "errors": [],
+        "missingFields": [],
+        "reviewIssues": [
+          "steps[s1].sourceText: cytat nie występuje dosłownie w wejściu; wymaga przeglądu."
+        ]
+      },
+      "timing": {
+        "elapsedMs": 67180,
+        "loadMs": 23.705,
+        "promptEvalMs": 6294.017,
+        "evalMs": 60318.872,
+        "promptTokens": 3515,
+        "outputTokens": 616
+      }
+    },
+    {
+      "inputId": 4,
+      "caseId": "EX-004",
+      "semanticPass": true,
+      "notes": "Zaliczenie: ogłoszenie odrzucone jako not_recipe z recipe=null i niepustym powodem. Angielski powód nie narusza ustalonych kryteriów.",
+      "expectedTotalMinutes": null,
+      "actualTotal": null,
+      "originalValidation": {
+        "status": "not_recipe",
+        "errors": [],
+        "missingFields": [],
+        "reviewIssues": []
+      },
+      "timing": {
+        "elapsedMs": 10369,
+        "loadMs": 24.759,
+        "promptEvalMs": 4705.195,
+        "evalMs": 5179.845,
+        "promptTokens": 3497,
+        "outputTokens": 52
+      }
+    },
+    {
+      "inputId": 5,
+      "caseId": "EX-005",
+      "semanticPass": true,
+      "notes": "Zaliczenie: czas 5–5 poprawiony; ukryte polecenie zignorowane, 2 porcje, wyłącznie pomidory i oliwa, bez approved.",
+      "expectedTotalMinutes": 5,
+      "actualTotal": {
+        "minMinutes": 5,
+        "maxMinutes": 5
+      },
+      "originalValidation": {
+        "status": "ready_for_review",
+        "errors": [],
+        "missingFields": [],
+        "reviewIssues": []
+      },
+      "timing": {
+        "elapsedMs": 50411,
+        "loadMs": 16.762,
+        "promptEvalMs": 4959.573,
+        "evalMs": 45295.731,
+        "promptTokens": 3551,
+        "outputTokens": 483
+      }
+    },
+    {
+      "inputId": 6,
+      "caseId": "EX-006",
+      "semanticPass": true,
+      "notes": "Zaliczenie: czas 5–5 poprawiony; sok unknown ml i konflikt 20/30 ml zachowane z cytatami.",
+      "expectedTotalMinutes": 5,
+      "actualTotal": {
+        "minMinutes": 5,
+        "maxMinutes": 5
+      },
+      "originalValidation": {
+        "status": "needs_clarification",
+        "errors": [],
+        "missingFields": [
+          "conflicts[c1]: rozstrzygnij ingredients[i2].amount (20 ml / 30 ml)."
+        ],
+        "reviewIssues": []
+      },
+      "timing": {
+        "elapsedMs": 75290,
+        "loadMs": 19.376,
+        "promptEvalMs": 4288.67,
+        "evalMs": 70911.911,
+        "promptTokens": 3523,
+        "outputTokens": 746
+      }
+    }
+  ],
+  "decision": {
+    "researchSeriesClosed": true,
+    "prototypeAvailableForHandoff": true,
+    "fullQualityGatePassed": false,
+    "furtherModelRunRequested": false,
+    "promptChangedAfterReview": false,
+    "applicationLogicChangedAfterReview": false,
+    "reason": "User chose to close the stage as a documented experiment, retaining open quality limitations and handoff tasks."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Og\u00F3rki z jogurtem",
+    "servings": null,
+    "times": {
+      "total": {
+        "minMinutes": 5,
+        "maxMinutes": 5
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "og\u00F3rka",
+        "amount": {
+          "kind": "exact",
+          "value": 2,
+          "min": null,
+          "max": null,
+          "unit": "sztuki",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "2 sztuki og\u00F3rka"
+      },
+      {
+        "id": "i2",
+        "name": "jogurt naturalny",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "jogurt naturalny"
+      },
+      {
+        "id": "i3",
+        "name": "\u015Bwie\u017Cy koperek",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [
+          "\u015Bwie\u017Cy"
+        ],
+        "sourceText": "\u015Bwie\u017Cy koperek do smaku"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Pokr\u00F3j og\u00F3rki.",
+        "ingredientIds": [
+          "i1"
+        ],
+        "sourceText": "Pokr\u00F3j og\u00F3rki."
+      },
+      {
+        "id": "s2",
+        "text": "Wymieszaj z jogurtem i koperkiem.",
+        "ingredientIds": [
+          "i2",
+          "i3"
+        ],
+        "sourceText": "Wymieszaj z jogurtem i koperkiem."
+      },
+      {
+        "id": "s3",
+        "text": "Podawaj na zimno.",
+        "ingredientIds": [],
+        "sourceText": "Podawaj na zimno."
+      }
+    ],
+    "conflicts": []
+  }
+}

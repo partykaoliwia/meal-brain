@@ -1,0 +1,8 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [
+    "conflicts[c1]: rozstrzygnij ingredients[i2].amount (20 ml / 30 ml)."
+  ],
+  "reviewIssues": []
+}

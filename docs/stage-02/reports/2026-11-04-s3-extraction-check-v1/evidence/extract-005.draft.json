@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Sa\u0142atka pomidorowa",
+    "servings": 2,
+    "times": {
+      "total": {
+        "minMinutes": 0,
+        "maxMinutes": 5
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "pomidor\u00F3w",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "200 g pomidor\u00F3w"
+      },
+      {
+        "id": "i2",
+        "name": "oliwy",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": "\u0142y\u017Cka",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 \u0142y\u017Cka oliwy"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Pokr\u00F3j pomidory.",
+        "ingredientIds": [
+          "i1"
+        ],
+        "sourceText": "Pokr\u00F3j pomidory."
+      },
+      {
+        "id": "s2",
+        "text": "Wymieszaj z oliw\u0105.",
+        "ingredientIds": [
+          "i1",
+          "i2"
+        ],
+        "sourceText": "Wymieszaj z oliw\u0105."
+      }
+    ],
+    "conflicts": []
+  }
+}

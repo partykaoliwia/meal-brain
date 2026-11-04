@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/MealBrain.ModelLab/MealBrain.ModelLab.csproj" />
+    <None Include="../../evals/finalists-v1/inputs.json" Link="finalists-v1.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../src/MealBrain.ModelLab/system-prompt.txt" Link="system-prompt.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../src/MealBrain.ModelLab/Recipes/extraction-prompt-v1.txt" Link="extraction-prompt-v1.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../src/MealBrain.ModelLab/Recipes/extraction-prompt-v2.txt" Link="extraction-prompt-v2.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../src/MealBrain.ModelLab/Recipes/extraction-prompt-v3.txt" Link="extraction-prompt-v3.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../evals/s3-extraction-check-v1/inputs.json" Link="s3-extraction-check-v1.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../evals/s3-extraction-check-v2/inputs.json" Link="s3-extraction-check-v2.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-check-v1/evidence/extract-*.draft.json" Link="extraction-check-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-check-v1/evidence/extract-*.source.txt" Link="extraction-check-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-v1/evidence/extract-*.draft.json" Link="extraction-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-v1/evidence/extract-*.source.txt" Link="extraction-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-v2/evidence/extract-*.draft.json" Link="extraction-v2/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-v2/evidence/extract-*.source.txt" Link="extraction-v2/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/contracts/recipe-draft-v1.schema.json" Link="recipe-draft-v1.schema.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/contracts/recipe-draft-v1.example.json" Link="recipe-draft-v1.example.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/test-cases.md" Link="test-cases.md" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

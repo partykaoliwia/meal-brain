@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Tosty z serem",
+    "servings": null,
+    "times": {
+      "total": {
+        "minMinutes": 0,
+        "maxMinutes": 10
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "chleb tostowy",
+        "amount": {
+          "kind": "exact",
+          "value": 2,
+          "min": null,
+          "max": null,
+          "unit": "kromka",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "Dwie kromki chleba tostowego"
+      },
+      {
+        "id": "i2",
+        "name": "ser gouda",
+        "amount": {
+          "kind": "exact",
+          "value": 2,
+          "min": null,
+          "max": null,
+          "unit": "plastry",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "Dwa plastry sera gouda"
+      },
+      {
+        "id": "i3",
+        "name": "ketchup",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "Troch\u0119"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "Troch\u0119 ketchupu"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Po\u0142o\u017Cy\u0107 ser na chlebie",
+        "ingredientIds": [
+          "i2",
+          "i1"
+        ],
+        "sourceText": "Po\u0142o\u017Cy\u0107 ser na chlebie"
+      },
+      {
+        "id": "s2",
+        "text": "Wsadzi\u0107 do tostera, tostowa\u0107 2 minuty",
+        "ingredientIds": [],
+        "sourceText": "wsadzi\u0107 do tostera, tostowa\u0107 2 minuty"
+      },
+      {
+        "id": "s3",
+        "text": "Je\u015B\u0107 z ketchupem",
+        "ingredientIds": [
+          "i3"
+        ],
+        "sourceText": "Je\u015B\u0107 z ketchupem"
+      }
+    ],
+    "conflicts": []
+  }
+}

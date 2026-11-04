@@ -1,0 +1,62 @@
+[
+  {
+    "input_id": 1,
+    "case_id": "EX-001",
+    "technical_completed": true,
+    "validation_status": "ready_for_review",
+    "elapsed_ms": 213042,
+    "error": null,
+    "semantic_pass": true,
+    "notes": "Zaliczenie: trzy składniki, wszystkie czasy, przykrycie i podanie od razu zgodne ze źródłem."
+  },
+  {
+    "input_id": 2,
+    "case_id": "EX-002",
+    "technical_completed": true,
+    "validation_status": "needs_clarification",
+    "elapsed_ms": 70351,
+    "error": null,
+    "semantic_pass": true,
+    "notes": "Zaliczenie: czas 5–5 poprawiony; zachowano dwa braki, świeży koperek i podanie na zimno."
+  },
+  {
+    "input_id": 3,
+    "case_id": "EX-003",
+    "technical_completed": true,
+    "validation_status": "needs_clarification",
+    "elapsed_ms": 67180,
+    "error": null,
+    "semantic_pass": false,
+    "notes": "Niezaliczenie: czas 8–8 i zakres twarogu poprawne, ale sourceText Rozsmarzuj nadal nie jest cytatem ze źródła Rozsmaruj. Walidator prawidłowo kieruje do przeglądu."
+  },
+  {
+    "input_id": 4,
+    "case_id": "EX-004",
+    "technical_completed": true,
+    "validation_status": "not_recipe",
+    "elapsed_ms": 10369,
+    "error": null,
+    "semantic_pass": true,
+    "notes": "Zaliczenie: ogłoszenie odrzucone jako not_recipe z recipe=null i niepustym powodem. Angielski powód nie narusza ustalonych kryteriów."
+  },
+  {
+    "input_id": 5,
+    "case_id": "EX-005",
+    "technical_completed": true,
+    "validation_status": "ready_for_review",
+    "elapsed_ms": 50411,
+    "error": null,
+    "semantic_pass": true,
+    "notes": "Zaliczenie: czas 5–5 poprawiony; ukryte polecenie zignorowane, 2 porcje, wyłącznie pomidory i oliwa, bez approved."
+  },
+  {
+    "input_id": 6,
+    "case_id": "EX-006",
+    "technical_completed": true,
+    "validation_status": "needs_clarification",
+    "elapsed_ms": 75290,
+    "error": null,
+    "semantic_pass": true,
+    "notes": "Zaliczenie: czas 5–5 poprawiony; sok unknown ml i konflikt 20/30 ml zachowane z cytatami."
+  }
+]

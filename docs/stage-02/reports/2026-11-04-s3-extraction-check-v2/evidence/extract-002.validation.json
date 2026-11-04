@@ -1,0 +1,9 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji.",
+    "ingredients[i2].amount: podaj ilo\u015B\u0107 (jogurt naturalny)."
+  ],
+  "reviewIssues": []
+}

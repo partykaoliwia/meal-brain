@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Kanapki z twaro\u017Ckiem",
+    "servings": 2,
+    "times": {
+      "total": {
+        "minMinutes": 0,
+        "maxMinutes": 8
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "chleb",
+        "amount": {
+          "kind": "exact",
+          "value": 4,
+          "min": null,
+          "max": null,
+          "unit": "kromka",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "4 kromki chleba"
+      },
+      {
+        "id": "i2",
+        "name": "twar\u00F3g",
+        "amount": {
+          "kind": "range",
+          "value": null,
+          "min": 120,
+          "max": 150,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "120\u2013150 g twarogu"
+      },
+      {
+        "id": "i3",
+        "name": "pomidor",
+        "amount": {
+          "kind": "exact",
+          "value": 2,
+          "min": null,
+          "max": null,
+          "unit": "plaster",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "2 plastry pomidora"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Rozsmarzuj twar\u00F3g na chlebie.",
+        "ingredientIds": [
+          "i1",
+          "i2"
+        ],
+        "sourceText": "Rozsmarzuj twar\u00F3g na chlebie."
+      },
+      {
+        "id": "s2",
+        "text": "U\u0142\u00F3\u017C pomidora na wierzchu.",
+        "ingredientIds": [
+          "i3"
+        ],
+        "sourceText": "U\u0142\u00F3\u017C pomidora na wierzchu."
+      }
+    ],
+    "conflicts": []
+  }
+}

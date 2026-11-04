@@ -1,0 +1,10 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji.",
+    "ingredients[i1].amount: podaj ilo\u015B\u0107 (makaron).",
+    "ingredients[i3].amount: podaj ilo\u015B\u0107 (\u015Bmietanka)."
+  ],
+  "reviewIssues": []
+}

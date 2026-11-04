@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Ry\u017C z groszkiem",
+    "servings": 2,
+    "times": {
+      "total": {
+        "minMinutes": 30,
+        "maxMinutes": 30
+      },
+      "preparation": {
+        "minMinutes": 5,
+        "maxMinutes": 5
+      },
+      "cooking": {
+        "minMinutes": 12,
+        "maxMinutes": 15
+      },
+      "resting": {
+        "minMinutes": 3,
+        "maxMinutes": 3
+      }
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "ry\u017C",
+        "amount": {
+          "kind": "exact",
+          "value": 150,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "150 g ry\u017Cu"
+      },
+      {
+        "id": "i2",
+        "name": "groszek",
+        "amount": {
+          "kind": "exact",
+          "value": 100,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "100 g groszku"
+      },
+      {
+        "id": "i3",
+        "name": "woda",
+        "amount": {
+          "kind": "exact",
+          "value": 300,
+          "min": null,
+          "max": null,
+          "unit": "ml",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "300 ml wody"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Wsyp ry\u017C i groszek do garnka, zalej wod\u0105.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3"
+        ],
+        "sourceText": "Wsyp ry\u017C i groszek do garnka, zalej wod\u0105."
+      },
+      {
+        "id": "s2",
+        "text": "Gotuj 12\u201315 minut.",
+        "ingredientIds": [],
+        "sourceText": "Gotuj 12\u201315 minut."
+      },
+      {
+        "id": "s3",
+        "text": "Odstaw pod przykryciem na 3 minuty.",
+        "ingredientIds": [],
+        "sourceText": "Odstaw pod przykryciem na 3 minuty."
+      },
+      {
+        "id": "s4",
+        "text": "Podawaj od razu.",
+        "ingredientIds": [],
+        "sourceText": "Podawaj od razu."
+      }
+    ],
+    "conflicts": []
+  }
+}

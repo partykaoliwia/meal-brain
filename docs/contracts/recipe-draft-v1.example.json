@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Szpinak podsmażany",
+    "servings": 2,
+    "times": {
+      "total": {
+        "minMinutes": 15,
+        "maxMinutes": 15
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "szpinak",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "200 g szpinaku"
+      },
+      {
+        "id": "i2",
+        "name": "oliwa",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "oliwa"
+      },
+      {
+        "id": "i3",
+        "name": "sól",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "sól do smaku"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Rozgrzej oliwę, dodaj szpinak i podsmaż.",
+        "ingredientIds": [
+          "i2",
+          "i1"
+        ],
+        "sourceText": "Rozgrzej oliwę, dodaj szpinak i podsmaż."
+      },
+      {
+        "id": "s2",
+        "text": "Dopraw solą do smaku.",
+        "ingredientIds": [
+          "i3"
+        ],
+        "sourceText": "Dopraw solą do smaku."
+      }
+    ],
+    "conflicts": []
+  }
+}

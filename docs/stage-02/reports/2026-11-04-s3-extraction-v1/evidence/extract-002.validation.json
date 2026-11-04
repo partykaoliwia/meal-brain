@@ -1,0 +1,10 @@
+{
+  "status": "invalid_output",
+  "errors": [
+    "conflicts[c1]: ilo\u015B\u0107 przy nierozstrzygni\u0119tym konflikcie musi by\u0107 unknown."
+  ],
+  "missingFields": [
+    "conflicts[c1]: rozstrzygnij ingredients[i2].amount (150 g / 200 g)."
+  ],
+  "reviewIssues": []
+}

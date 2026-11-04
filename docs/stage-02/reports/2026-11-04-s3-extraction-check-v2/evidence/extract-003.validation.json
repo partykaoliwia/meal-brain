@@ -1,0 +1,8 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [],
+  "reviewIssues": [
+    "steps[s1].sourceText: cytat nie wyst\u0119puje dos\u0142ownie w wej\u015Bciu; wymaga przegl\u0105du."
+  ]
+}
