@@ -16,6 +16,8 @@
     <None Include="../../evals/s3-extraction-check-v2/inputs.json" Link="s3-extraction-check-v2.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-check-v1/evidence/extract-*.draft.json" Link="extraction-check-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-check-v1/evidence/extract-*.source.txt" Link="extraction-check-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-check-v2/evidence/extract-*.draft.json" Link="extraction-check-v2/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-check-v2/evidence/extract-*.source.txt" Link="extraction-check-v2/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-v1/evidence/extract-*.draft.json" Link="extraction-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-v1/evidence/extract-*.source.txt" Link="extraction-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-v2/evidence/extract-*.draft.json" Link="extraction-v2/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />

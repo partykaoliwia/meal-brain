@@ -99,6 +99,7 @@ Check(csv.Length == 3 && csv.All(line => line.Split(',').Length == 9), "Nieprawi
 Check(csv.Skip(1).All(line => line.Split(',').Skip(3).All(string.IsNullOrEmpty)), "Program sam nadał ocenę jakości.");
 
 await ExtractionChecks.RunAsync();
+DraftSessionChecks.Run();
 Console.WriteLine("OK: zakres 12/20/41, zamrożenie promptu, izolacja historii i powtórzeń, uzupełnienia, błędy, payload API, ucięcia i pusta karta ocen. Żaden model nie został wywołany.");
 
 sealed class FakeHandler(Func<HttpRequestMessage, Task<HttpResponseMessage>> respond) : HttpMessageHandler
