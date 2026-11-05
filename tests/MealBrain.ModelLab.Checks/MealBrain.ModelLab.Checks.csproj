@@ -12,6 +12,8 @@
     <None Include="../../src/MealBrain.ModelLab/Recipes/extraction-prompt-v1.txt" Link="extraction-prompt-v1.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../src/MealBrain.ModelLab/Recipes/extraction-prompt-v2.txt" Link="extraction-prompt-v2.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../src/MealBrain.ModelLab/Recipes/extraction-prompt-v3.txt" Link="extraction-prompt-v3.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../src/MealBrain.ModelLab/Recipes/draft-update-prompt-v1.txt" Link="draft-update-prompt-v1.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../src/MealBrain.ModelLab/Recipes/draft-update-v1.schema.json" Link="draft-update-v1.schema.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../evals/s3-extraction-check-v1/inputs.json" Link="s3-extraction-check-v1.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../evals/s3-extraction-check-v2/inputs.json" Link="s3-extraction-check-v2.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../docs/stage-02/reports/2026-11-04-s3-extraction-check-v1/evidence/extract-*.draft.json" Link="extraction-check-v1/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />

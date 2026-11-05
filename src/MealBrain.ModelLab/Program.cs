@@ -22,6 +22,16 @@ if (args.Length > 0 && args[0] == "--extract")
     return await ExtractionConsole.RunAsync(args.ElementAtOrDefault(1) ?? "gemma4:12b", args.ElementAtOrDefault(3));
 }
 
+if (args.Length > 0 && args[0] == "--draft")
+{
+    if (args.Length > 2)
+    {
+        Console.Error.WriteLine("Użycie: dotnet run --project src/MealBrain.ModelLab -- --draft [model]");
+        return 1;
+    }
+    return await DraftConsole.RunAsync(args.ElementAtOrDefault(1) ?? "gemma4:12b");
+}
+
 var prompt = await File.ReadAllTextAsync(Path.Combine(AppContext.BaseDirectory, "system-prompt.txt"));
 var suitePath = Path.Combine(AppContext.BaseDirectory, "finalists-v1.json");
 if (args is ["--check-suite"])
