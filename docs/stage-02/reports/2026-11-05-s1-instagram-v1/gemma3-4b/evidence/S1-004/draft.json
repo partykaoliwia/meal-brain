@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Smacznego",
+    "servings": null,
+    "times": {
+      "total": null,
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "ka\u015Bzki manny",
+        "amount": {
+          "kind": "exact",
+          "value": 50,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "50 g ka\u015Bzki manny"
+      },
+      {
+        "id": "i2",
+        "name": "mleka",
+        "amount": {
+          "kind": "exact",
+          "value": 150,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "150g mleka"
+      },
+      {
+        "id": "i3",
+        "name": "wody",
+        "amount": {
+          "kind": "exact",
+          "value": 100,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "100g wody"
+      },
+      {
+        "id": "i4",
+        "name": "skyra",
+        "amount": {
+          "kind": "exact",
+          "value": 150,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "150g skyr"
+      },
+      {
+        "id": "i5",
+        "name": "Maliny",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "Maliny"
+      },
+      {
+        "id": "i6",
+        "name": "bia\u0142ej czekolady",
+        "amount": {
+          "kind": "exact",
+          "value": 20,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "20g bia\u0142ej czekolady"
+      },
+      {
+        "id": "i7",
+        "name": "skyr",
+        "amount": {
+          "kind": "exact",
+          "value": 20,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "20g skyr"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Wszystkie sk\u0142adniki wymiesza\u0107",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4",
+          "i5",
+          "i6",
+          "i7"
+        ],
+        "sourceText": "Wszystkie sk\u0142adniki wymiesza\u0107"
+      }
+    ],
+    "conflicts": []
+  }
+}

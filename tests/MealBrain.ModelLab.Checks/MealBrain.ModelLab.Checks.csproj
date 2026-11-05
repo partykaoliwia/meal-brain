@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="../../src/MealBrain.ModelLab/Recipes/image-extraction-prompt-v1.txt" Link="image-extraction-prompt-v1.txt" CopyToOutputDirectory="PreserveNewest" />
     <ProjectReference Include="../../src/MealBrain.ModelLab/MealBrain.ModelLab.csproj" />
     <None Include="../../evals/finalists-v1/inputs.json" Link="finalists-v1.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../src/MealBrain.ModelLab/system-prompt.txt" Link="system-prompt.txt" CopyToOutputDirectory="PreserveNewest" />

@@ -10,6 +10,9 @@ using MealBrain.ModelLab.Recipes;
 Console.InputEncoding = Encoding.UTF8;
 Console.OutputEncoding = Encoding.UTF8;
 
+if (args.Length > 0 && ImageCommands.Handles(args[0]))
+    return await ImageCommands.RunAsync(args);
+
 if (args.Length > 0 && args[0] == "--extract")
 {
     var validExtractArgs = args.Length <= 2 ||

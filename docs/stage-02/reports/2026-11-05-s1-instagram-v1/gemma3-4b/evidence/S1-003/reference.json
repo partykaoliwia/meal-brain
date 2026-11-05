@@ -1,0 +1,196 @@
+{
+  "ready": true,
+  "transcription": "Składniki (na 4 sztuki):\n• 200 g serka wiejskiego (u mnie wysokobiałkowy)\n• 200 g mąki orkiszowej typ 720 (sprawdzi się też pszenna lub pełnoziarnista)\n• 1 łyżeczka proszku do pieczenia\n• ½ łyżeczki soli\n• 1 jajko do posmarowania\n• oliwa do posmarowania papieru i delikatnego spryskania bajgli (obowiązkowo!)\n• ulubiona posypka (u mnie gotowa przyprawa do bajgli, ale świetnie sprawdzi się też sezam, czarnuszka, czosnek granulowany i suszona cebulka)\n\nPrzygotowanie:\n1️⃣ Zblenduj serek wiejski na gładką masę. Dodaj mąkę, proszek do pieczenia i sól.\n2️⃣ Wyrób ciasto do uzyskania gładkiej konsystencji. Uformuj kulkę, przykryj ściereczką i odstaw na około 5 minut.\n3️⃣ Podziel ciasto na 4 części. Każdą rozwałkuj na długi prostokąt, zwiń w rulon i delikatnie poroluj go jeszcze w dłoniach. Następnie jeden koniec lekko spłaszcz, owiń nim drugi koniec i dokładnie zlep, formując bajgla.\n4️⃣ Papier do pieczenia koniecznie posmaruj lub spryskaj oliwą. Ułóż bajgle, posmaruj je roztrzepanym jajkiem, posyp ulubioną posypką i delikatnie spryskaj oliwą.\n5️⃣ Piecz przez 25–30 minut w piekarniku nagrzanym do 180°C (góra-dół) aż będą złociste. Pod koniec pieczenia możesz włączyć na 2–3 minuty funkcję grilla, żeby były jeszcze bardziej rumiane.\n\nSmacznego! 🤍🤭",
+  "expectedValidationStatus": "needs_clarification",
+  "expectedDraft": {
+    "schemaVersion": 1,
+    "inputKind": "recipe",
+    "rejectionReason": null,
+    "recipe": {
+      "title": null,
+      "servings": null,
+      "times": {
+        "total": null,
+        "preparation": null,
+        "cooking": {
+          "minMinutes": 25,
+          "maxMinutes": 30
+        },
+        "resting": {
+          "minMinutes": 5,
+          "maxMinutes": 5
+        }
+      },
+      "ingredients": [
+        {
+          "id": "i1",
+          "name": "serek wiejski",
+          "amount": {
+            "kind": "exact",
+            "value": 200,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "u mnie wysokobiałkowy"
+          ],
+          "sourceText": "200 g serka wiejskiego (u mnie wysokobiałkowy)"
+        },
+        {
+          "id": "i2",
+          "name": "mąka orkiszowa",
+          "amount": {
+            "kind": "exact",
+            "value": 200,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "typ 720",
+            "alternatywnie pszenna lub pełnoziarnista"
+          ],
+          "sourceText": "200 g mąki orkiszowej typ 720 (sprawdzi się też pszenna lub pełnoziarnista)"
+        },
+        {
+          "id": "i3",
+          "name": "proszek do pieczenia",
+          "amount": {
+            "kind": "exact",
+            "value": 1,
+            "min": null,
+            "max": null,
+            "unit": "łyżeczka",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "1 łyżeczka proszku do pieczenia"
+        },
+        {
+          "id": "i4",
+          "name": "sól",
+          "amount": {
+            "kind": "exact",
+            "value": 0.5,
+            "min": null,
+            "max": null,
+            "unit": "łyżeczka",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "½ łyżeczki soli"
+        },
+        {
+          "id": "i5",
+          "name": "jajko",
+          "amount": {
+            "kind": "exact",
+            "value": 1,
+            "min": null,
+            "max": null,
+            "unit": "szt.",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "do posmarowania"
+          ],
+          "sourceText": "1 jajko do posmarowania"
+        },
+        {
+          "id": "i6",
+          "name": "oliwa",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "do posmarowania papieru i spryskania bajgli",
+            "obowiązkowo"
+          ],
+          "sourceText": "oliwa do posmarowania papieru i delikatnego spryskania bajgli (obowiązkowo!)"
+        },
+        {
+          "id": "i7",
+          "name": "ulubiona posypka",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "gotowa przyprawa do bajgli lub wymienione zamienniki"
+          ],
+          "sourceText": "ulubiona posypka (u mnie gotowa przyprawa do bajgli, ale świetnie sprawdzi się też sezam, czarnuszka, czosnek granulowany i suszona cebulka)"
+        }
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "text": "Zblenduj serek wiejski na gładką masę. Dodaj mąkę, proszek do pieczenia i sól.",
+          "ingredientIds": [
+            "i1",
+            "i2",
+            "i3",
+            "i4"
+          ],
+          "sourceText": "Zblenduj serek wiejski na gładką masę. Dodaj mąkę, proszek do pieczenia i sól."
+        },
+        {
+          "id": "s2",
+          "text": "Wyrób ciasto do uzyskania gładkiej konsystencji. Uformuj kulkę, przykryj ściereczką i odstaw na około 5 minut.",
+          "ingredientIds": [],
+          "sourceText": "Wyrób ciasto do uzyskania gładkiej konsystencji. Uformuj kulkę, przykryj ściereczką i odstaw na około 5 minut."
+        },
+        {
+          "id": "s3",
+          "text": "Podziel ciasto na 4 części. Każdą rozwałkuj na długi prostokąt, zwiń w rulon i delikatnie poroluj go jeszcze w dłoniach. Następnie jeden koniec lekko spłaszcz, owiń nim drugi koniec i dokładnie zlep, formując bajgla.",
+          "ingredientIds": [],
+          "sourceText": "Podziel ciasto na 4 części. Każdą rozwałkuj na długi prostokąt, zwiń w rulon i delikatnie poroluj go jeszcze w dłoniach. Następnie jeden koniec lekko spłaszcz, owiń nim drugi koniec i dokładnie zlep, formując bajgla."
+        },
+        {
+          "id": "s4",
+          "text": "Papier do pieczenia koniecznie posmaruj lub spryskaj oliwą. Ułóż bajgle, posmaruj je roztrzepanym jajkiem, posyp ulubioną posypką i delikatnie spryskaj oliwą.",
+          "ingredientIds": [
+            "i5",
+            "i6",
+            "i7"
+          ],
+          "sourceText": "Papier do pieczenia koniecznie posmaruj lub spryskaj oliwą. Ułóż bajgle, posmaruj je roztrzepanym jajkiem, posyp ulubioną posypką i delikatnie spryskaj oliwą."
+        },
+        {
+          "id": "s5",
+          "text": "Piecz przez 25–30 minut w piekarniku nagrzanym do 180°C (góra-dół) aż będą złociste. Pod koniec pieczenia możesz włączyć na 2–3 minuty funkcję grilla, żeby były jeszcze bardziej rumiane.",
+          "ingredientIds": [],
+          "sourceText": "Piecz przez 25–30 minut w piekarniku nagrzanym do 180°C (góra-dół) aż będą złociste. Pod koniec pieczenia możesz włączyć na 2–3 minuty funkcję grilla, żeby były jeszcze bardziej rumiane."
+        }
+      ],
+      "conflicts": []
+    }
+  },
+  "requiredChecks": [
+    "Nie wymyślać tytułu i czasu całkowitego. Zachować jawny uzysk czterech sztuk i podział ciasta na 4 części.",
+    "Pole servings nie odróżnia liczby sztuk od porcji: dopuszczalne null albo 4 jako jawny uzysk. Nie utożsamiać go samodzielnie z posiłkiem dla 4 osób.",
+    "½ łyżeczki soli = 0.5; typ mąki 720 i 180°C nie są ilościami składników. Zamienniki mąki i posypki nie są dodatkowymi obowiązkowymi zakupami.",
+    "Oliwa obowiązkowa, ilość unknown; posypka bez podanej ilości. Nie nadawać optional tylko na podstawie wiedzy kulinarnej.",
+    "cooking 25–30 min, resting około 5 min; zachować 180°C, góra-dół i opcjonalny grill 2–3 min pod koniec. Nie sumować ich do total."
+  ],
+  "sourceUrl": null,
+  "notes": "Instagram, polski. Brak osobnego tytułu. Wzorzec ma servings=null przy ścisłej interpretacji jako porcje; dopuszczalny wariant 4 jako uzysk wyraźnie ustalono PRZED próbą. Równoważny podział zdań na kroki jest dozwolony."
+}

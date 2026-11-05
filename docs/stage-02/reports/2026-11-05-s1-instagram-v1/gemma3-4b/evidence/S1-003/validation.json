@@ -1,0 +1,18 @@
+{
+  "status": "invalid_output",
+  "errors": [
+    "ingredients[i4].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i6].amount: pola nie odpowiadaj\u0105 kind=unknown.",
+    "ingredients[i7].amount: pola nie odpowiadaj\u0105 kind=unknown."
+  ],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji.",
+    "times.total: podaj czas ca\u0142kowity.",
+    "ingredients[i5].amount.unit: podaj jednostk\u0119.",
+    "ingredients[i6].amount: podaj ilo\u015B\u0107 (oliwa).",
+    "ingredients[i7].amount: podaj ilo\u015B\u0107 (posypka)."
+  ],
+  "reviewIssues": [
+    "ingredients[i4].amount.unit: jednostka \u00BD nie jest jeszcze obs\u0142ugiwana."
+  ]
+}

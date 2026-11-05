@@ -43,6 +43,8 @@ Wynik badań S3 dotyczy ekstrakcji; jakość rozmowy trzeba ocenić osobno. Rapo
 
 ## Patrycja — eksperyment S1 z obrazami
 
+Aktualizacja S1, 5 listopada: przygotowano osobny `RecipeImageExtractor`, komendy odczytu obrazów i zamrożonego zestawu, wzorce oraz [prezentację Beamer](../presentations/s1-instagram/main.tex). Wykonano pierwsze porównanie sześciu screenów z Instagrama: [Gemma 0/6, Qwen 1/6, bez poprawnego pełnego importu przepisu](reports/2026-11-05-s1-instagram-v1/report.md). [Instrukcja S1](s1-images-how-to.md) opisuje uruchomienie, a [protokół](s1-instagram-v1-protocol.md) zakres i ograniczenia próby. Poniższy opis zachowuje pierwotne założenia przekazania z 4 listopada.
+
 Proponowany zakres na etap 2: dwa modele obsługujące obrazy, mały wspólny zestaw np. sześciu obrazów i zapis wyników. Można wykorzystać przepisy z [dotychczasowych przypadków](test-cases.md), przygotowując ręczny wzorzec przed uruchomieniem modeli. Uwzględnij czytelny kompletny przepis, niekompletne dane i trudniejszy odczyt zdjęcia. Warunki porównania powinny być jednakowe; nie trzeba zaczynać od wielu rodzin modeli.
 
 Cel wyniku: dokument zgodny z tym samym RecipeDraft v1, z `unknown`/`null` przy nieczytelnych danych i bez zgadywania porcji lub ilości. W raporcie odróżnij odczyt tekstu obrazu od interpretacji składników, czasów i konfliktów. Zapisz ustawienia, oryginalny obraz, odpowiedź, ocenę i czas; nieudane próby też są wynikiem.

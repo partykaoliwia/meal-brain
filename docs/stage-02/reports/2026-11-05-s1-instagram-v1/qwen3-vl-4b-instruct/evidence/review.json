@@ -1,0 +1,80 @@
+[
+  {
+    "caseId": "S1-001",
+    "technicalCompleted": true,
+    "validationStatus": "invalid_output",
+    "elapsedMs": 25157,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-002",
+    "technicalCompleted": true,
+    "validationStatus": "invalid_output",
+    "elapsedMs": 16675,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-003",
+    "technicalCompleted": true,
+    "validationStatus": "invalid_output",
+    "elapsedMs": 31669,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-004",
+    "technicalCompleted": true,
+    "validationStatus": "not_recipe",
+    "elapsedMs": 4480,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-005",
+    "technicalCompleted": true,
+    "validationStatus": "not_recipe",
+    "elapsedMs": 4490,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-006",
+    "technicalCompleted": true,
+    "validationStatus": "invalid_output",
+    "elapsedMs": 18662,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  }
+]

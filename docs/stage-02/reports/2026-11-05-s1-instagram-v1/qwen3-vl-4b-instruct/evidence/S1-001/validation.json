@@ -1,0 +1,27 @@
+{
+  "status": "invalid_output",
+  "errors": [
+    "ingredients[i1].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i2].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i4].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i5].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i6].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i7].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i8].amount: pola nie odpowiadaj\u0105 kind=unknown."
+  ],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji.",
+    "times.total: podaj czas ca\u0142kowity.",
+    "ingredients[i7].amount.unit: podaj jednostk\u0119.",
+    "ingredients[i8].amount: podaj ilo\u015B\u0107 (mini choc chips).",
+    "steps: brak krok\u00F3w przygotowania."
+  ],
+  "reviewIssues": [
+    "ingredients[i1].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i2].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i3].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (pinch of).",
+    "ingredients[i4].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i5].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i6].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana."
+  ]
+}

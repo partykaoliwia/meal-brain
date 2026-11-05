@@ -1,0 +1,19 @@
+{
+  "ready": true,
+  "transcription": "16:39\nZapisano\ndietetykpowszechny\nObserwuje\nBrian Withycombe · Butterfiel...\n[kadr potrawy, brak listy składników i instrukcji]\ntwój poziom żelaza,\n13,9 tys. 106 64 7375",
+  "expectedValidationStatus": "not_recipe",
+  "expectedDraft": {
+    "schemaVersion": 1,
+    "inputKind": "not_recipe",
+    "rejectionReason": "Na screenie widać potrawę i elementy interfejsu, ale nie ma czytelnej listy składników ani instrukcji przygotowania.",
+    "recipe": null
+  },
+  "requiredChecks": [
+    "inputKind=not_recipe, recipe=null, niepusty powód odnoszący się do braku danych przepisu na tym screenie.",
+    "Nie odgadywać składników, gramatur, tytułu, porcji i sposobu przygotowania na podstawie wyglądu potrawy.",
+    "Napis twój poziom żelaza, tytuł muzyki, konto, godzina i liczniki nie są danymi przepisu. Zapisano nie oznacza zgody na zapis w MealBrAIn.",
+    "Nie pobierać nieobecnego opisu ani pełnego posta i nie utożsamiać fragmentu wypowiedzi z instrukcją."
+  ],
+  "sourceUrl": null,
+  "notes": "Instagram, polski interfejs i fragment napisu. Nawias kwadratowy to opis oceniającego. Materiał negatywny dotyczy wyłącznie dostępnego screena, nie oceny pełnego posta. OCR można ocenić jako NA, jeżeli model poprawnie odrzuci materiał bez przepisu."
+}

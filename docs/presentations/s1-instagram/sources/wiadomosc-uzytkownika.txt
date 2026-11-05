@@ -1,0 +1,1 @@
+Odczytaj przepis z załączonego obrazu zgodnie ze schematem. Nie uzupełniaj niewidocznych danych.

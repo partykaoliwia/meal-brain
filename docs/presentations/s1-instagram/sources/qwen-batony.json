@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "the easiest homemade protein bars",
+    "servings": null,
+    "times": {
+      "total": null,
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "almond flour",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": 1,
+          "max": 1,
+          "unit": "cup",
+          "text": "cup"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 cup almond flour"
+      },
+      {
+        "id": "i2",
+        "name": "protein powder",
+        "amount": {
+          "kind": "exact",
+          "value": 0.75,
+          "min": 0.75,
+          "max": 0.75,
+          "unit": "cup",
+          "text": "3/4 cup"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "3/4 cup protein powder"
+      },
+      {
+        "id": "i3",
+        "name": "salt",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "pinch of"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "pinch of salt"
+      },
+      {
+        "id": "i4",
+        "name": "smooth peanut butter",
+        "amount": {
+          "kind": "exact",
+          "value": 0.5,
+          "min": 0.5,
+          "max": 0.5,
+          "unit": "cup",
+          "text": "1/2 cup"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1/2 cup smooth peanut butter"
+      },
+      {
+        "id": "i5",
+        "name": "maple syrup",
+        "amount": {
+          "kind": "exact",
+          "value": 0.25,
+          "min": 0.25,
+          "max": 0.25,
+          "unit": "cup",
+          "text": "1/4 cup"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1/4 cup maple syrup"
+      },
+      {
+        "id": "i6",
+        "name": "melted coconut oil",
+        "amount": {
+          "kind": "exact",
+          "value": 0.25,
+          "min": 0.25,
+          "max": 0.25,
+          "unit": "cup",
+          "text": "1/4"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1/4 melted coconut oil"
+      },
+      {
+        "id": "i7",
+        "name": "vanilla essence",
+        "amount": {
+          "kind": "exact",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "vanilla essence"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "vanilla essence"
+      },
+      {
+        "id": "i8",
+        "name": "mini choc chips",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "mini choc chips"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "mini choc chips (measure with heart!)"
+      }
+    ],
+    "steps": [],
+    "conflicts": []
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Babka",
+    "servings": null,
+    "times": {
+      "total": null,
+      "preparation": {
+        "minMinutes": 5,
+        "maxMinutes": 5
+      },
+      "cooking": {
+        "minMinutes": 25,
+        "maxMinutes": 30
+      },
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "serka wiejskiego",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "200 g serka wiejskiego (u mnie wysokobia\u0142kowy)"
+      },
+      {
+        "id": "i2",
+        "name": "m\u0105ki orkiszowej",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [
+          "typ 720"
+        ],
+        "sourceText": "200 g m\u0105ki orkiszowej typ 720 (sprawd\u017A si\u0119 te\u017C pszenna lub pe\u0142noziarnista)"
+      },
+      {
+        "id": "i3",
+        "name": "tyczka proszku do pieczenia",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": "\u0142y\u017Ceczka",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 \u0142y\u017Ceczka proszku do pieczenia"
+      },
+      {
+        "id": "i4",
+        "name": "s\u00F3l",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": "\u00BD",
+          "text": "\u0142y\u017Ceczki"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1/2 \u0142y\u017Ceczki soli"
+      },
+      {
+        "id": "i5",
+        "name": "jajko",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [
+          "do posmarowania"
+        ],
+        "sourceText": "1 jajko do posmarowania"
+      },
+      {
+        "id": "i6",
+        "name": "oliwa",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do posmarowania papieru i delikatnego spryskania bajgli"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "oliwa do posmarowania papieru i delikatnego spryskania bajgli (obowi\u0105zkowo!)"
+      },
+      {
+        "id": "i7",
+        "name": "posypka",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": "lubiona",
+          "text": "posypka (u mnie gotowa przywara, ale \u015Bwietnie sprawd\u017A si\u0119 te\u017C sezam, czarnuszk\u0119 i suszon\u0105 cebulk\u0119)"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "lubiona posypka (u mnie gotowa przywara, ale \u015Bwietnie sprawd\u017A si\u0119 te\u017C sezam, czarnuszk\u0119 i suszon\u0105 cebulk\u0119)"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Zblenduj sererek wiejski na g\u0142adk\u0105 mas\u0119. Dodaj m\u0105k\u0119, proszek do pieczenia i s\u00F3l.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ],
+        "sourceText": "Zblenduj sererek wiejski na g\u0142adk\u0105 mas\u0119. Dodaj m\u0105k\u0119, proszek do pieczenia i s\u00F3l."
+      },
+      {
+        "id": "s2",
+        "text": "Wyrob ciasto do uzyskania g\u0142adkiej konsystencji. Uformuj kulk\u0119, przykryj \u015Bcierczk\u0105 i odstaw na oko\u0142o 5 minut.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ],
+        "sourceText": "Wyrob ciasto do uzyskania g\u0142adkiej konsystencji. Uformuj kulk\u0119, przykryj \u015Bcierczk\u0105 i odstaw na oko\u0142o 5 minut."
+      },
+      {
+        "id": "s3",
+        "text": "Podziel ciasto na 4 cz\u0119\u015Bci. Ka\u017Cda rozw\u0142\u00F3knij na d\u0142ugi prostok\u0105t, zwij w rulon i delikatnie poroluj go jeszcze w dniach. Nast\u0119pnie jeden koniec lekko sp\u0142aszcz, owi\u0144 nim drugi koniec i dokladnie zlep, formuj\u0105c bajgl.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ],
+        "sourceText": "Podziel ciasto na 4 cz\u0119\u015Bci. Ka\u017Cda rozw\u0142\u00F3knij na d\u0142ugi prostok\u0105t, zwij w rulon i delikatnie poroluj go jeszcze w dniach. Nast\u0119pnie jeden koniec lekko sp\u0142aszcz, owi\u0144 nim drugi koniec i dokladnie zlep, formuj\u0105c bajgl."
+      },
+      {
+        "id": "s4",
+        "text": "Papier do pieczenia koniecznie posmaruj lub spryskaj oliw\u0105. U\u0142\u00F3\u017C bajgle, posmaruj, posyp roztrzepanym jajkiem, posyp ulubion\u0105 posypk\u0105 i delikatnie spryskaj oliw\u0105.",
+        "ingredientIds": [
+          "i5",
+          "i6",
+          "i7"
+        ],
+        "sourceText": "Papier do pieczenia koniecznie posmaruj lub spryskaj oliw\u0105. U\u0142\u00F3\u017C bajgle, posmaruj, posyp roztrzepanym jajkiem, posyp ulubion\u0105 posypk\u0105 i delikatnie spryskaj oliw\u0105."
+      },
+      {
+        "id": "s5",
+        "text": "Piecz przez 25\u201330 minut w piekarniku nagrzanym do 180\u00B0C (g\u00F3ra-d\u00F3\u0142) a\u017C b\u0119d\u0105 sk\u00F3rka z\u0142ocista.",
+        "ingredientIds": [],
+        "sourceText": "Piecz przez 25\u201330 minut w piekarniku nagrzanym do 180\u00B0C (g\u00F3ra-d\u00F3\u0142) a\u017C b\u0119d\u0105 sk\u00F3rka z\u0142ocista."
+      }
+    ],
+    "conflicts": []
+  }
+}

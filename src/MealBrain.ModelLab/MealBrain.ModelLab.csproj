@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <None Update="Recipes/image-extraction-prompt-v1.txt" Link="image-extraction-prompt-v1.txt" TargetPath="image-extraction-prompt-v1.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Update="system-prompt.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Update="Recipes/extraction-prompt-v1.txt" Link="extraction-prompt-v1.txt" TargetPath="extraction-prompt-v1.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Update="Recipes/extraction-prompt-v2.txt" Link="extraction-prompt-v2.txt" TargetPath="extraction-prompt-v2.txt" CopyToOutputDirectory="PreserveNewest" />

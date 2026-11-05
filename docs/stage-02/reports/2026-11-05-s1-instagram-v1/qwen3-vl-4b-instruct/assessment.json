@@ -1,0 +1,142 @@
+{
+  "assessmentDate": "2026-11-05",
+  "assessor": "Asystent, przegląd obrazów, pełnych odpowiedzi i kryteriów zamrożonych przed próbą; do przeglądu przez zespół.",
+  "criteria": "../../../s1-instagram-v1-protocol.md",
+  "sourceRun": "runs/20261105-155454-s1-1a044c79b4fe42fd8abef378509ec6e0",
+  "summary": {
+    "model": "qwen3-vl:4b-instruct",
+    "digest": "84f7ed8042fa7cdbd902f7dcb7d0370e032095047cc3244179f263b77b5bc318",
+    "technicalCompleted": 6,
+    "validContract": 2,
+    "passed": 1,
+    "recipeImportsPassed": 0,
+    "criticalCases": 1,
+    "totalCases": 6,
+    "medianMs": 17668.5,
+    "totalMs": 101133,
+    "calls": [
+      {
+        "input": 4122,
+        "output": 897,
+        "done": "stop",
+        "loadMs": 4175.8767,
+        "caseId": "S1-001"
+      },
+      {
+        "input": 4240,
+        "output": 1064,
+        "done": "stop",
+        "loadMs": 22.9361,
+        "caseId": "S1-002"
+      },
+      {
+        "input": 5350,
+        "output": 1872,
+        "done": "stop",
+        "loadMs": 40.5654,
+        "caseId": "S1-003"
+      },
+      {
+        "input": 6016,
+        "output": 70,
+        "done": "stop",
+        "loadMs": 150.322,
+        "caseId": "S1-004"
+      },
+      {
+        "input": 6016,
+        "output": 54,
+        "done": "stop",
+        "loadMs": 340.9934,
+        "caseId": "S1-005"
+      },
+      {
+        "input": 4351,
+        "output": 1153,
+        "done": "stop",
+        "loadMs": 19.9726,
+        "caseId": "S1-006"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "caseId": "S1-001",
+      "technicalCompleted": true,
+      "validationStatus": "invalid_output",
+      "elapsedMs": 25157,
+      "error": null,
+      "visualReviewRequired": true,
+      "ocrPass": true,
+      "interpretationPass": false,
+      "criticalError": true,
+      "passed": false,
+      "notes": "Widoczne ułamki odczytano jako 1, 0.75, 0.5 i 0.25; brak dopisanych kroków. Dopisano jednak cup do oleju bez jednostki. Większość exact ma jednocześnie min, max i text; vanilla essence ma kind=exact z value=null, a unknown chips ma text. Wynik invalid_output. Pominięto opis smaku odżywki. Poprawność wybranych cytatów nie daje poprawnej reprezentacji."
+    },
+    {
+      "caseId": "S1-002",
+      "technicalCompleted": true,
+      "validationStatus": "invalid_output",
+      "elapsedMs": 16675,
+      "error": null,
+      "visualReviewRequired": true,
+      "ocrPass": false,
+      "interpretationPass": false,
+      "criticalError": false,
+      "passed": false,
+      "notes": "Zachowano 2 porcje i sześć ilości z listy. łososia/łososiem odczytano jako tososia/tososiem. Cztery przyprawy pozostają wyłącznie w kroku, bez ingredients. Czas pieczenia 25 min skopiowano także do total bez źródła. Wszystkie exact mają nadmiarowe min/max/text, co powoduje invalid_output. Błąd przypisania czasu oceniono jako interpretacyjny, bez zwiększania liczby krytycznych zmyśleń składników/ilości."
+    },
+    {
+      "caseId": "S1-003",
+      "technicalCompleted": true,
+      "validationStatus": "invalid_output",
+      "elapsedMs": 31669,
+      "error": null,
+      "visualReviewRequired": true,
+      "ocrPass": false,
+      "interpretationPass": false,
+      "criticalError": false,
+      "passed": false,
+      "notes": "4 jako jawny uzysk jest dopuszczalne według protokołu; nie jest powodem odrzucenia. Poprawne 0.5 soli i 25–30 min, ale cooking skopiowano do total, a resting 5 min pominięto. łyżeczka → tyżeczka, Ułóż → Ufóz, zwiń → zwin oraz inne zmienione cytaty. exact zawiera min/max/text. Braki oliwy i posypki ukryto jako opisowe ilości. Zachowano informację o grillu."
+    },
+    {
+      "caseId": "S1-004",
+      "technicalCompleted": true,
+      "validationStatus": "not_recipe",
+      "elapsedMs": 4480,
+      "error": null,
+      "visualReviewRequired": true,
+      "ocrPass": null,
+      "interpretationPass": false,
+      "criticalError": false,
+      "passed": false,
+      "notes": "Model rozpoznaje listę składników i odwołanie do filmu, ale odrzuca je jako not_recipe. Według wcześniej ustalonego kontraktu to rzeczywisty fragment przepisu i należało oddać składniki z brakami oraz steps=[]. Nie zmyślono kroków. OCR=NA: odpowiedź nie ujawnia odczytu konkretnych nazw i ilości."
+    },
+    {
+      "caseId": "S1-005",
+      "technicalCompleted": true,
+      "validationStatus": "not_recipe",
+      "elapsedMs": 4490,
+      "error": null,
+      "visualReviewRequired": true,
+      "ocrPass": null,
+      "interpretationPass": true,
+      "criticalError": false,
+      "passed": true,
+      "notes": "Poprawne not_recipe, recipe=null, niepusty powód braku widocznych składników i instrukcji. Nie odgadywano przepisu z fotografii. OCR=NA dla transkrypcji przepisu, którego na obrazie nie ma."
+    },
+    {
+      "caseId": "S1-006",
+      "technicalCompleted": true,
+      "validationStatus": "invalid_output",
+      "elapsedMs": 18662,
+      "error": null,
+      "visualReviewRequired": true,
+      "ocrPass": false,
+      "interpretationPass": false,
+      "criticalError": false,
+      "passed": false,
+      "notes": "Jedna porcja i cooking 1–2 min poprawne, lecz brak czasów zastąpiono zakresami 0/0. Username trafił do tytułu. Około 3 g mąki pozostało w sourceText bez właściwej ilości; pominięto wodę, skyr i borówki w ingredients, choć ostatni krok je wymienia. Krok wskazuje nieistniejący i8. Cytat kroku zmienia interpunkcję i zapis zakresu; exact ma min/max/text. invalid_output. Utrata danych i błędne pola czasów są opisane jako błędy interpretacji; nie dopisano tu nowej dodatniej dawki."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "invalid_output",
+  "errors": [
+    "ingredients[i1].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i2].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i3].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i4].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i5].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i6].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "steps[s2].ingredientIds: nieistniej\u0105ce lub powt\u00F3rzone odniesienie."
+  ],
+  "missingFields": [],
+  "reviewIssues": [
+    "ingredients[i2].amount.unit: jednostka jajko nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i7].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (cynamon)."
+  ]
+}

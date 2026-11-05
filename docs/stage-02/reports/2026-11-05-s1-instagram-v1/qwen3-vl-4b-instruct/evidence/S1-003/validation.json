@@ -1,0 +1,20 @@
+{
+  "status": "invalid_output",
+  "errors": [
+    "ingredients[i1].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i2].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i3].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i4].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i5].amount: pola nie odpowiadaj\u0105 kind=exact."
+  ],
+  "missingFields": [
+    "title: podaj tytu\u0142."
+  ],
+  "reviewIssues": [
+    "ingredients[i3].amount.unit: jednostka ty\u017Ceczka nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i4].amount.unit: jednostka ty\u017Ceczki nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i5].amount.unit: jednostka jajko nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i6].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (do posmarowania papieru i delikatnego spryskania bajgli).",
+    "ingredients[i7].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (ulubiona posypka)."
+  ]
+}

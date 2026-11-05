@@ -1,0 +1,10 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [
+    "title: podaj tytu\u0142.",
+    "servings: podaj liczb\u0119 porcji.",
+    "times.total: podaj czas ca\u0142kowity."
+  ],
+  "reviewIssues": []
+}

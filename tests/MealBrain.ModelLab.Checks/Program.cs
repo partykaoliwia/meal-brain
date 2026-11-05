@@ -100,6 +100,7 @@ Check(csv.Skip(1).All(line => line.Split(',').Skip(3).All(string.IsNullOrEmpty))
 
 await ExtractionChecks.RunAsync();
 DraftSessionChecks.Run();
+await ImageExtractionChecks.RunAsync();
 Console.WriteLine("OK: zakres 12/20/41, zamrożenie promptu, izolacja historii i powtórzeń, uzupełnienia, błędy, payload API, ucięcia i pusta karta ocen. Żaden model nie został wywołany.");
 
 sealed class FakeHandler(Func<HttpRequestMessage, Task<HttpResponseMessage>> respond) : HttpMessageHandler

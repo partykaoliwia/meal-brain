@@ -1,0 +1,10 @@
+# Active prompts and schema must match the existing frozen hashes on Windows.
+/src/MealBrain.ModelLab/system-prompt.txt text eol=lf
+/src/MealBrain.ModelLab/Recipes/extraction-prompt-*.txt text eol=lf
+/src/MealBrain.ModelLab/Recipes/image-extraction-prompt-*.txt text eol=lf
+/docs/contracts/recipe-draft-v1.schema.json text eol=lf
+# Keep new S1 protocols portable; leave historical report files under their existing rules.
+/evals/s1-images-*/**/*.json text eol=lf
+# Preserve exact bytes of the new evidence archives and their hash manifests.
+/docs/stage-02/reports/2026-11-05-s1-instagram-v1/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/docs/stage-02/reports/2026-11-05-s1-instagram-v1/report.md text eol=lf

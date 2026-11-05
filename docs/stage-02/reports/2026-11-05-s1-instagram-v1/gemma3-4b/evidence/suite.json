@@ -1,0 +1,40 @@
+{
+  "id": "s1-instagram-v1",
+  "options": {
+    "temperature": 0,
+    "numCtx": 16384,
+    "numPredict": 4096
+  },
+  "cases": [
+    {
+      "id": "S1-001",
+      "image": "images/IMG_5280.JPEG",
+      "reference": "references/S1-001.json"
+    },
+    {
+      "id": "S1-002",
+      "image": "images/IMG_5281.JPEG",
+      "reference": "references/S1-002.json"
+    },
+    {
+      "id": "S1-003",
+      "image": "images/IMG_5283.JPEG",
+      "reference": "references/S1-003.json"
+    },
+    {
+      "id": "S1-004",
+      "image": "images/IMG_5284.PNG",
+      "reference": "references/S1-004.json"
+    },
+    {
+      "id": "S1-005",
+      "image": "images/IMG_5285.PNG",
+      "reference": "references/S1-005.json"
+    },
+    {
+      "id": "S1-006",
+      "image": "images/IMG_5286.JPEG",
+      "reference": "references/S1-006.json"
+    }
+  ]
+}

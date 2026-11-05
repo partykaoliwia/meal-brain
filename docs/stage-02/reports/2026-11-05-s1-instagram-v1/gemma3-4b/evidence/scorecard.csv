@@ -1,0 +1,7 @@
+case_id,technical_completed,validation_status,elapsed_ms,ocr_pass,interpretation_pass,critical_error,passed,notes
+S1-001,true,needs_clarification,31311,,,,,
+S1-002,true,needs_clarification,17589,,,,,
+S1-003,true,invalid_output,24738,,,,,
+S1-004,true,needs_clarification,13824,,,,,
+S1-005,true,needs_clarification,16102,,,,,
+S1-006,true,invalid_output,18527,,,,,

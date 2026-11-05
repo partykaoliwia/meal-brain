@@ -1,0 +1,153 @@
+{
+  "ready": true,
+  "transcription": "16:39\nZapisano\n[kadr filmu: łyżka nad garnkiem; brak instrukcji tekstowej na filmie]\n20,6 tys. 127 480 11,3 tys.\nnatalia_lichwala Składniki 👇\n50g kaszki manny\n150g mleka\n100g wody\n150g skyra\nSłodzidło\nMaliny\n20g białej czekolady + 20g skyra\nWykonanie na filmie ❤️\nSmacznego🥰",
+  "expectedValidationStatus": "needs_clarification",
+  "expectedDraft": {
+    "schemaVersion": 1,
+    "inputKind": "recipe",
+    "rejectionReason": null,
+    "recipe": {
+      "title": null,
+      "servings": null,
+      "times": {
+        "total": null,
+        "preparation": null,
+        "cooking": null,
+        "resting": null
+      },
+      "ingredients": [
+        {
+          "id": "i1",
+          "name": "kaszka manna",
+          "amount": {
+            "kind": "exact",
+            "value": 50,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "50g kaszki manny"
+        },
+        {
+          "id": "i2",
+          "name": "mleko",
+          "amount": {
+            "kind": "exact",
+            "value": 150,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "150g mleka"
+        },
+        {
+          "id": "i3",
+          "name": "woda",
+          "amount": {
+            "kind": "exact",
+            "value": 100,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "100g wody"
+        },
+        {
+          "id": "i4",
+          "name": "skyr",
+          "amount": {
+            "kind": "exact",
+            "value": 150,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "150g skyra"
+        },
+        {
+          "id": "i5",
+          "name": "słodzidło",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "Słodzidło"
+        },
+        {
+          "id": "i6",
+          "name": "maliny",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "Maliny"
+        },
+        {
+          "id": "i7",
+          "name": "biała czekolada",
+          "amount": {
+            "kind": "exact",
+            "value": 20,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "20g białej czekolady"
+        },
+        {
+          "id": "i8",
+          "name": "skyr",
+          "amount": {
+            "kind": "exact",
+            "value": 20,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "20g skyra"
+        }
+      ],
+      "steps": [],
+      "conflicts": []
+    }
+  },
+  "requiredChecks": [
+    "To niekompletny przepis z listą składników: inputKind=recipe, brak tytułu, porcji, czasów i kroków pozostaje jawny.",
+    "Nie tworzyć instrukcji gotowania z kadru filmu ani z tekstu Wykonanie na filmie.",
+    "Zachować gramy mleka i wody; nie przeliczać ich na ml.",
+    "Zachować oba wystąpienia skyra: 150 g i 20 g. Dopuszczalne 170 g tylko przy jawnym zachowaniu podziału 150+20; pominięcie drugiej części jest błędem ilości.",
+    "Słodzidło i maliny bez ilości mają unknown, bez typowej liczby lub domyślnego do smaku. Godzina, polubienia i Zapisano nie nadają czasu, porcji ani zgody."
+  ],
+  "sourceUrl": null,
+  "notes": "Instagram, polski. Nawias kwadratowy w transkrypcji jest opisem oceniającego, nie cytatem z obrazu. Dwa wystąpienia skyra rozdzielono w szkicu, aby zachować widoczne porcje składnika; źródło nie określa nazwy warstwy ani zastosowania tych części."
+}

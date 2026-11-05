@@ -1,0 +1,157 @@
+{
+  "ready": true,
+  "transcription": "pirirosebell the easiest homemade protein bars 🍪😘\n🌟\n\nrecipe:\n1 cup almond flour\n3/4 cup protein powder (I used @macromike cookie dough flav!)\npinch of salt\n1/2 cup smooth peanut butter\n1/4 cup maple syrup\n1/4 melted coconut oil\nvanilla essence\nmini choc chips (measure with heart!)",
+  "expectedValidationStatus": "needs_clarification",
+  "expectedDraft": {
+    "schemaVersion": 1,
+    "inputKind": "recipe",
+    "rejectionReason": null,
+    "recipe": {
+      "title": "the easiest homemade protein bars",
+      "servings": null,
+      "times": {
+        "total": null,
+        "preparation": null,
+        "cooking": null,
+        "resting": null
+      },
+      "ingredients": [
+        {
+          "id": "i1",
+          "name": "almond flour",
+          "amount": {
+            "kind": "exact",
+            "value": 1,
+            "min": null,
+            "max": null,
+            "unit": "cup",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "1 cup almond flour"
+        },
+        {
+          "id": "i2",
+          "name": "protein powder",
+          "amount": {
+            "kind": "exact",
+            "value": 0.75,
+            "min": null,
+            "max": null,
+            "unit": "cup",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "I used @macromike cookie dough flav!"
+          ],
+          "sourceText": "3/4 cup protein powder (I used @macromike cookie dough flav!)"
+        },
+        {
+          "id": "i3",
+          "name": "salt",
+          "amount": {
+            "kind": "text",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": "pinch"
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "pinch of salt"
+        },
+        {
+          "id": "i4",
+          "name": "smooth peanut butter",
+          "amount": {
+            "kind": "exact",
+            "value": 0.5,
+            "min": null,
+            "max": null,
+            "unit": "cup",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "1/2 cup smooth peanut butter"
+        },
+        {
+          "id": "i5",
+          "name": "maple syrup",
+          "amount": {
+            "kind": "exact",
+            "value": 0.25,
+            "min": null,
+            "max": null,
+            "unit": "cup",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "1/4 cup maple syrup"
+        },
+        {
+          "id": "i6",
+          "name": "coconut oil",
+          "amount": {
+            "kind": "exact",
+            "value": 0.25,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "melted"
+          ],
+          "sourceText": "1/4 melted coconut oil"
+        },
+        {
+          "id": "i7",
+          "name": "vanilla essence",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "vanilla essence"
+        },
+        {
+          "id": "i8",
+          "name": "mini choc chips",
+          "amount": {
+            "kind": "text",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": "measure with heart!"
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "mini choc chips (measure with heart!)"
+        }
+      ],
+      "steps": [],
+      "conflicts": []
+    }
+  },
+  "requiredChecks": [
+    "Rozpoznać niekompletny przepis, nie odrzucać listy składników jako not_recipe. Nie dopisywać przygotowania, porcji ani czasu.",
+    "Osiem składników; 1, 0.75, 0.5 i 0.25 cup odczytane z ułamków bez konwersji objętości.",
+    "W 1/4 melted coconut oil brak jednostki: value=0.25 i unit=null. Nie dopisywać cup na podstawie sąsiednich wierszy.",
+    "pinch i measure with heart! są opisami ilości do przeglądu; dopuszczalne unknown przy jawnej nieoznaczoności drugiego opisu. Nie wymyślać gramów.",
+    "sourceText pozostaje po angielsku i odpowiada widocznym fragmentom; handle autora i marka nie stają się osobnymi składnikami."
+  ],
+  "sourceUrl": null,
+  "notes": "Instagram, język angielski. Lista składników bez kroków. Angielskie cup oraz opisy ilości mogą powodować ReviewIssues w obecnym polskim słowniku walidatora; to ograniczenie aplikacji, nie automatycznie błąd OCR. Oczekiwana zgodność dotyczy obrazu, bez tłumaczenia cytatów."
+}

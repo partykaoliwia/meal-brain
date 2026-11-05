@@ -1,0 +1,15 @@
+{
+  "status": "invalid_output",
+  "errors": [
+    "ingredients[i3].amount: pola nie odpowiadaj\u0105 kind=exact."
+  ],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji.",
+    "times.total: podaj czas ca\u0142kowity.",
+    "ingredients[i2].amount.unit: podaj jednostk\u0119.",
+    "ingredients[i7].amount.unit: podaj jednostk\u0119.",
+    "ingredients[i8].amount.unit: podaj jednostk\u0119.",
+    "ingredients[i9].amount: podaj ilo\u015B\u0107 (bor\u00F3wki)."
+  ],
+  "reviewIssues": []
+}

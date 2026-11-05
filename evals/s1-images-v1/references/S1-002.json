@@ -1,0 +1,240 @@
+{
+  "ready": true,
+  "transcription": "Makaron z pieczonym łososiem i serem feta 🔥\n\nSkładniki (2 porcje):\n✅200 g świeżego łososia\n✅75 g sera feta\n✅200 g pomidorków koktajlowych\n✅10 g oliwy z oliwek\n✅100 g szpinaku\n✅100 g makaronu pełnoziarnistego\n\nDo naczynia żaroodpornego przełóż rybę, ser i pomidorki. Skrop oliwą, dodaj czosnek granulowany, oregano, sól i pieprz. Piecz w 200 stopniach przez ok. 25 minut. Zgnieć wszystkie składniki widelcem i wymieszaj. Dodaj szpinak, makaron i ponownie wymieszaj.\n\n1 porcja:\n560 kcal / 34,4g B / 28,7g T / 43,2g W",
+  "expectedValidationStatus": "needs_clarification",
+  "expectedDraft": {
+    "schemaVersion": 1,
+    "inputKind": "recipe",
+    "rejectionReason": null,
+    "recipe": {
+      "title": "Makaron z pieczonym łososiem i serem feta",
+      "servings": 2,
+      "times": {
+        "total": null,
+        "preparation": null,
+        "cooking": {
+          "minMinutes": 25,
+          "maxMinutes": 25
+        },
+        "resting": null
+      },
+      "ingredients": [
+        {
+          "id": "i1",
+          "name": "łosoś",
+          "amount": {
+            "kind": "exact",
+            "value": 200,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "świeży"
+          ],
+          "sourceText": "200 g świeżego łososia"
+        },
+        {
+          "id": "i2",
+          "name": "ser feta",
+          "amount": {
+            "kind": "exact",
+            "value": 75,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "75 g sera feta"
+        },
+        {
+          "id": "i3",
+          "name": "pomidorki koktajlowe",
+          "amount": {
+            "kind": "exact",
+            "value": 200,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "200 g pomidorków koktajlowych"
+        },
+        {
+          "id": "i4",
+          "name": "oliwa z oliwek",
+          "amount": {
+            "kind": "exact",
+            "value": 10,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "10 g oliwy z oliwek"
+        },
+        {
+          "id": "i5",
+          "name": "szpinak",
+          "amount": {
+            "kind": "exact",
+            "value": 100,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "100 g szpinaku"
+        },
+        {
+          "id": "i6",
+          "name": "makaron pełnoziarnisty",
+          "amount": {
+            "kind": "exact",
+            "value": 100,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "100 g makaronu pełnoziarnistego"
+        },
+        {
+          "id": "i7",
+          "name": "czosnek granulowany",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "czosnek granulowany"
+        },
+        {
+          "id": "i8",
+          "name": "oregano",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "oregano"
+        },
+        {
+          "id": "i9",
+          "name": "sól",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "sól"
+        },
+        {
+          "id": "i10",
+          "name": "pieprz",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "pieprz"
+        }
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "text": "Do naczynia żaroodpornego przełóż rybę, ser i pomidorki.",
+          "ingredientIds": [
+            "i1",
+            "i2",
+            "i3"
+          ],
+          "sourceText": "Do naczynia żaroodpornego przełóż rybę, ser i pomidorki."
+        },
+        {
+          "id": "s2",
+          "text": "Skrop oliwą, dodaj czosnek granulowany, oregano, sól i pieprz.",
+          "ingredientIds": [
+            "i4",
+            "i7",
+            "i8",
+            "i9",
+            "i10"
+          ],
+          "sourceText": "Skrop oliwą, dodaj czosnek granulowany, oregano, sól i pieprz."
+        },
+        {
+          "id": "s3",
+          "text": "Piecz w 200 stopniach przez ok. 25 minut.",
+          "ingredientIds": [
+            "i1",
+            "i2",
+            "i3"
+          ],
+          "sourceText": "Piecz w 200 stopniach przez ok. 25 minut."
+        },
+        {
+          "id": "s4",
+          "text": "Zgnieć wszystkie składniki widelcem i wymieszaj.",
+          "ingredientIds": [
+            "i1",
+            "i2",
+            "i3"
+          ],
+          "sourceText": "Zgnieć wszystkie składniki widelcem i wymieszaj."
+        },
+        {
+          "id": "s5",
+          "text": "Dodaj szpinak, makaron i ponownie wymieszaj.",
+          "ingredientIds": [
+            "i5",
+            "i6"
+          ],
+          "sourceText": "Dodaj szpinak, makaron i ponownie wymieszaj."
+        }
+      ],
+      "conflicts": []
+    }
+  },
+  "requiredChecks": [
+    "Dwie porcje z nagłówka; etykieta 1 porcja przy makroskładnikach nie zmienia uzysku przepisu na jedną porcję.",
+    "Zachować sześć ilości z listy i cztery dodatkowe przyprawy wymienione w przygotowaniu z unknown, bez dopisywania do smaku.",
+    "Czas cooking około 25 minut; total pozostaje null. Przybliżenie ma pozostać w kroku; nie tworzyć własnych granic czasu.",
+    "Zachować 200 stopni, czynności i ich kolejność. Nie dodawać niewidocznego etapu gotowania makaronu.",
+    "Makroskładniki i kalorie nie są składnikami; nie przenosić 34.4, 28.7 ani 43.2 do ilości produktów."
+  ],
+  "sourceUrl": null,
+  "notes": "Instagram, język polski. Brak czasu całkowitego; przybliżone pieczenie zapisane jako 25/25 z zachowanym ok. w kroku. Cytaty są transkrypcją widocznego tekstu. Suma etapów nie jest wyliczana."
+}

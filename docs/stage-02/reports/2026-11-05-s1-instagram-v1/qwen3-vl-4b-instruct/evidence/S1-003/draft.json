@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": null,
+    "servings": 4,
+    "times": {
+      "total": {
+        "minMinutes": 25,
+        "maxMinutes": 30
+      },
+      "preparation": null,
+      "cooking": {
+        "minMinutes": 25,
+        "maxMinutes": 30
+      },
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "serka wiejskiego",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": 200,
+          "max": 200,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [
+          "u mnie wysokobia\u0142kowy"
+        ],
+        "sourceText": "200 g serka wiejskiego (u mnie wysokobia\u0142kowy)"
+      },
+      {
+        "id": "i2",
+        "name": "m\u0105ki orkiszowej typ 720",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": 200,
+          "max": 200,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [
+          "sprawdzi si\u0119 te\u017C pszenna lub pe\u0142noziarnista"
+        ],
+        "sourceText": "200 g m\u0105ki orkiszowej typ 720 (sprawdzi si\u0119 te\u017C pszenna lub pe\u0142noziarnista)"
+      },
+      {
+        "id": "i3",
+        "name": "proszku do pieczenia",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": 1,
+          "max": 1,
+          "unit": "ty\u017Ceczka",
+          "text": "ty\u017Ceczka"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 ty\u017Ceczka proszku do pieczenia"
+      },
+      {
+        "id": "i4",
+        "name": "soli",
+        "amount": {
+          "kind": "exact",
+          "value": 0.5,
+          "min": 0.5,
+          "max": 0.5,
+          "unit": "ty\u017Ceczki",
+          "text": "ty\u017Ceczki"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "\u00BD ty\u017Ceczki soli"
+      },
+      {
+        "id": "i5",
+        "name": "jajko do posmarowania",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": 1,
+          "max": 1,
+          "unit": "jajko",
+          "text": "jajko"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 jajko do posmarowania"
+      },
+      {
+        "id": "i6",
+        "name": "oliwa do posmarowania papieru i delikatnego spryskania bajgli",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do posmarowania papieru i delikatnego spryskania bajgli"
+        },
+        "optional": false,
+        "qualifiers": [
+          "obowi\u0105zkowo!"
+        ],
+        "sourceText": "oliwa do posmarowania papieru i delikatnego spryskania bajgli (obowi\u0105zkowo!)"
+      },
+      {
+        "id": "i7",
+        "name": "ulubiona posypka",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "ulubiona posypka"
+        },
+        "optional": false,
+        "qualifiers": [
+          "u mnie gotowa przyprawa do bajgli, ale \u015Bwietnie sprawdzi si\u0119 te\u017C sezam, czarnuszka, czosnek granulowany i suszona cebulka"
+        ],
+        "sourceText": "ulubiona posypka (u mnie gotowa przyprawa do bajgli, ale \u015Bwietnie sprawdzi si\u0119 te\u017C sezam, czarnuszka, czosnek granulowany i suszona cebulka)"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Zblenduj serek wiejski na g\u0142adk\u0105 mas\u0119. Dodaj m\u0105k\u0119, proszek do pieczenia i s\u00F3l.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ],
+        "sourceText": "Zblenduj serek wiejski na g\u0142adk\u0105 mas\u0119. Dodaj m\u0105k\u0119, proszek do pieczenia i s\u00F3l."
+      },
+      {
+        "id": "s2",
+        "text": "Wyr\u00F3b ciasto do uzyskania g\u0142adkiej konsystencji. Uformuj kulk\u0119, przykryj \u015Bciereczk\u0105 i odstaw na oko\u0142o 5 minut.",
+        "ingredientIds": [
+          "i1",
+          "i2"
+        ],
+        "sourceText": "Wyr\u00F3b ciasto do uzyskania g\u0142adkiej konsystencji. Uformuj kulk\u0119, przykryj \u015Bciereczk\u0105 i odstaw na oko\u0142o 5 minut."
+      },
+      {
+        "id": "s3",
+        "text": "Podziel ciasto na 4 cz\u0119\u015Bci. Ka\u017Cd\u0105 rozwa\u0142kuj na d\u0142ugi prostok\u0105t, zwin w rulon i delikatnie poroluj go jeszcze w d\u0142oniach. Nast\u0119pnie jeden koniec lekko sp\u0142aszcz, owi\u0144 nim drugi koniec i dok\u0142adnie zlep, formuj\u0105c bajgla.",
+        "ingredientIds": [
+          "i1",
+          "i2"
+        ],
+        "sourceText": "Podziel ciasto na 4 cz\u0119\u015Bci. Ka\u017Cd\u0105 rozwa\u0142kuj na d\u0142ugi prostok\u0105t, zwin w rulon i delikatnie poroluj go jeszcze w d\u0142oniach. Nast\u0119pnie jeden koniec lekko sp\u0142aszcz, owi\u0144 nim drugi koniec i dok\u0142adnie zlep, formuj\u0105c bajgla."
+      },
+      {
+        "id": "s4",
+        "text": "Papier do pieczenia koniecznie posmaruj lub spryskaj oliw\u0105. Uf\u00F3z bajgle, posmaruj je roztrzepanym jajkiem, posyp ulubion\u0105 posypk\u0105 i delikatnie spryskaj oliw\u0105.",
+        "ingredientIds": [
+          "i6",
+          "i5",
+          "i7"
+        ],
+        "sourceText": "Papier do pieczenia koniecznie posmaruj lub spryskaj oliw\u0105. Uf\u00F3z bajgle, posmaruj je roztrzepanym jajkiem, posyp ulubion\u0105 posypk\u0105 i delikatnie spryskaj oliw\u0105."
+      },
+      {
+        "id": "s5",
+        "text": "Piec przez 25-30 minut w piekarniku nagrzanym do 180\u00B0C (g\u00F3ra-d\u00F3\u0142) a\u017C b\u0119d\u0105 z\u0142o\u0107iste. Pod koniec pieczenia mo\u017Cesz w\u0142\u0105czy\u0107 na 2-3 minuty funkcj\u0119 grilla, \u017Ceby by\u0142y jeszcze bardziej rumiane.",
+        "ingredientIds": [],
+        "sourceText": "Piec przez 25-30 minut w piekarniku nagrzanym do 180\u00B0C (g\u00F3ra-d\u00F3\u0142) a\u017C b\u0119d\u0105 z\u0142o\u0107iste. Pod koniec pieczenia mo\u017Cesz w\u0142\u0105czy\u0107 na 2-3 minuty funkcj\u0119 grilla, \u017Ceby by\u0142y jeszcze bardziej rumiane."
+      }
+    ],
+    "conflicts": []
+  }
+}

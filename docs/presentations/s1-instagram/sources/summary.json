@@ -1,0 +1,120 @@
+{
+  "suiteId": "s1-instagram-v1",
+  "date": "2026-11-05",
+  "decision": "Żaden z dwóch modeli przy zbadanym promptcie i ustawieniach nie daje poprawnego pełnego importu przepisu. Qwen zalicza wyłącznie przypadek bez przepisu.",
+  "scope": "Sześć screenów z Instagrama: pięć niekompletnych przepisów i jeden przypadek negatywny, jeden język angielski i pięć polskich. Jeden odczyt na model i obraz.",
+  "models": [
+    {
+      "model": "gemma3:4b",
+      "digest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+      "technicalCompleted": 6,
+      "validContract": 4,
+      "passed": 0,
+      "recipeImportsPassed": 0,
+      "criticalCases": 4,
+      "totalCases": 6,
+      "medianMs": 18058,
+      "totalMs": 122091,
+      "calls": [
+        {
+          "input": 3485,
+          "output": 1314,
+          "done": "stop",
+          "loadMs": 9292.273,
+          "caseId": "S1-001"
+        },
+        {
+          "input": 3485,
+          "output": 1271,
+          "done": "stop",
+          "loadMs": 25.7017,
+          "caseId": "S1-002"
+        },
+        {
+          "input": 3485,
+          "output": 1813,
+          "done": "stop",
+          "loadMs": 62.7264,
+          "caseId": "S1-003"
+        },
+        {
+          "input": 3485,
+          "output": 964,
+          "done": "stop",
+          "loadMs": 154.9995,
+          "caseId": "S1-004"
+        },
+        {
+          "input": 3485,
+          "output": 1123,
+          "done": "stop",
+          "loadMs": 329.3979,
+          "caseId": "S1-005"
+        },
+        {
+          "input": 3485,
+          "output": 1344,
+          "done": "stop",
+          "loadMs": 19.1888,
+          "caseId": "S1-006"
+        }
+      ]
+    },
+    {
+      "model": "qwen3-vl:4b-instruct",
+      "digest": "84f7ed8042fa7cdbd902f7dcb7d0370e032095047cc3244179f263b77b5bc318",
+      "technicalCompleted": 6,
+      "validContract": 2,
+      "passed": 1,
+      "recipeImportsPassed": 0,
+      "criticalCases": 1,
+      "totalCases": 6,
+      "medianMs": 17668.5,
+      "totalMs": 101133,
+      "calls": [
+        {
+          "input": 4122,
+          "output": 897,
+          "done": "stop",
+          "loadMs": 4175.8767,
+          "caseId": "S1-001"
+        },
+        {
+          "input": 4240,
+          "output": 1064,
+          "done": "stop",
+          "loadMs": 22.9361,
+          "caseId": "S1-002"
+        },
+        {
+          "input": 5350,
+          "output": 1872,
+          "done": "stop",
+          "loadMs": 40.5654,
+          "caseId": "S1-003"
+        },
+        {
+          "input": 6016,
+          "output": 70,
+          "done": "stop",
+          "loadMs": 150.322,
+          "caseId": "S1-004"
+        },
+        {
+          "input": 6016,
+          "output": 54,
+          "done": "stop",
+          "loadMs": 340.9934,
+          "caseId": "S1-005"
+        },
+        {
+          "input": 4351,
+          "output": 1153,
+          "done": "stop",
+          "loadMs": 19.9726,
+          "caseId": "S1-006"
+        }
+      ]
+    }
+  ]
+}

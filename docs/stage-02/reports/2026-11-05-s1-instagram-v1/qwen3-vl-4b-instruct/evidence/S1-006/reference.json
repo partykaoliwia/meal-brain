@@ -1,0 +1,241 @@
+{
+  "ready": true,
+  "transcription": "kingamszanik kluski leniwe 🫐\n\n542 kcal 39B 15T 63W\n\nskładniki na jedną porcję:\n125 g twarogu chudego\n1 jajko\n60 g mąki + ok. 3 g do obsypania\n\nkluski wrzucić do gotującej się wody, jak wypłyną ku górze to gotować jeszcze 1–2 minuty, następnie wrzucić na patelnię, dodać poniższe składniki i chwilę podsmażyć:\n\n8 g bułki tartej\n10 g masła\n5 g cukru\ncynamon\n\nna wierzch dodać łyżkę skyru i ciepłe borówki 🫐",
+  "expectedValidationStatus": "needs_clarification",
+  "expectedDraft": {
+    "schemaVersion": 1,
+    "inputKind": "recipe",
+    "rejectionReason": null,
+    "recipe": {
+      "title": "kluski leniwe",
+      "servings": 1,
+      "times": {
+        "total": null,
+        "preparation": null,
+        "cooking": {
+          "minMinutes": 1,
+          "maxMinutes": 2
+        },
+        "resting": null
+      },
+      "ingredients": [
+        {
+          "id": "i1",
+          "name": "twaróg chudy",
+          "amount": {
+            "kind": "exact",
+            "value": 125,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "125 g twarogu chudego"
+        },
+        {
+          "id": "i2",
+          "name": "jajko",
+          "amount": {
+            "kind": "exact",
+            "value": 1,
+            "min": null,
+            "max": null,
+            "unit": "szt.",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "1 jajko"
+        },
+        {
+          "id": "i3",
+          "name": "mąka",
+          "amount": {
+            "kind": "exact",
+            "value": 60,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "60 g mąki"
+        },
+        {
+          "id": "i4",
+          "name": "mąka",
+          "amount": {
+            "kind": "exact",
+            "value": 3,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "około",
+            "do obsypania"
+          ],
+          "sourceText": "ok. 3 g do obsypania"
+        },
+        {
+          "id": "i5",
+          "name": "woda",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "do gotowania"
+          ],
+          "sourceText": "gotującej się wody"
+        },
+        {
+          "id": "i6",
+          "name": "bułka tarta",
+          "amount": {
+            "kind": "exact",
+            "value": 8,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "8 g bułki tartej"
+        },
+        {
+          "id": "i7",
+          "name": "masło",
+          "amount": {
+            "kind": "exact",
+            "value": 10,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "10 g masła"
+        },
+        {
+          "id": "i8",
+          "name": "cukier",
+          "amount": {
+            "kind": "exact",
+            "value": 5,
+            "min": null,
+            "max": null,
+            "unit": "g",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "5 g cukru"
+        },
+        {
+          "id": "i9",
+          "name": "cynamon",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [],
+          "sourceText": "cynamon"
+        },
+        {
+          "id": "i10",
+          "name": "skyr",
+          "amount": {
+            "kind": "exact",
+            "value": 1,
+            "min": null,
+            "max": null,
+            "unit": "łyżka",
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "na wierzch"
+          ],
+          "sourceText": "łyżkę skyru"
+        },
+        {
+          "id": "i11",
+          "name": "borówki",
+          "amount": {
+            "kind": "unknown",
+            "value": null,
+            "min": null,
+            "max": null,
+            "unit": null,
+            "text": null
+          },
+          "optional": false,
+          "qualifiers": [
+            "ciepłe",
+            "na wierzch"
+          ],
+          "sourceText": "ciepłe borówki"
+        }
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "text": "Kluski wrzucić do gotującej się wody, jak wypłyną ku górze to gotować jeszcze 1–2 minuty.",
+          "ingredientIds": [
+            "i5"
+          ],
+          "sourceText": "kluski wrzucić do gotującej się wody, jak wypłyną ku górze to gotować jeszcze 1–2 minuty"
+        },
+        {
+          "id": "s2",
+          "text": "Następnie wrzucić na patelnię, dodać bułkę tartą, masło, cukier i cynamon i chwilę podsmażyć.",
+          "ingredientIds": [
+            "i6",
+            "i7",
+            "i8",
+            "i9"
+          ],
+          "sourceText": "następnie wrzucić na patelnię, dodać poniższe składniki i chwilę podsmażyć:"
+        },
+        {
+          "id": "s3",
+          "text": "Na wierzch dodać skyr i ciepłe borówki.",
+          "ingredientIds": [
+            "i10",
+            "i11"
+          ],
+          "sourceText": "na wierzch dodać łyżkę skyru i ciepłe borówki"
+        }
+      ],
+      "conflicts": []
+    }
+  },
+  "requiredChecks": [
+    "Jedna porcja, tytuł kluski leniwe; makroskładniki i 542 kcal nie trafiają do składników.",
+    "Zachować 60 g mąki i dodatkowe około 3 g do obsypania. Dopuszczalna wspólna reprezentacja tylko przy zachowaniu obu zastosowań i przybliżenia.",
+    "Składniki z dalszej części tekstu są częścią tego samego przepisu: bułka tarta 8 g, masło 10 g, cukier 5 g, cynamon unknown, 1 łyżka skyru i ciepłe borówki unknown.",
+    "Uwzględnić wodę do gotowania wymienioną w kroku, z nieznaną ilością. Cynamonu i borówek nie uzupełniać domyślnie do smaku ani gramami.",
+    "Zachować dogotowanie 1–2 min PO WYPŁYNIĘCIU i chwilę podsmażania bez wymyślonej długości; nie traktować 1–2 minut jako total.",
+    "Nie dopisywać niewidocznych etapów mieszania twarogu z mąką, formowania ani krojenia klusek. Zachować dostępne kroki i braki w źródle."
+  ],
+  "sourceUrl": null,
+  "notes": "Instagram, polski. Pole cooking przechowuje jedyny liczbowy czas etapu: dogotowanie po wypłynięciu, nie cały czas gotowania. Nie ma total ani czasu przygotowania. Wzorcowy krok 2 rozwija odwołanie poniższe składniki do widocznej listy; sourceText pozostaje cytatem. Nie wymagamy dopisywania kroków nieobecnych na screenie."
+}

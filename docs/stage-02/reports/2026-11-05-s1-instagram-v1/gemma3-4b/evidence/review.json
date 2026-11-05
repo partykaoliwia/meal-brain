@@ -1,0 +1,80 @@
+[
+  {
+    "caseId": "S1-001",
+    "technicalCompleted": true,
+    "validationStatus": "needs_clarification",
+    "elapsedMs": 31311,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-002",
+    "technicalCompleted": true,
+    "validationStatus": "needs_clarification",
+    "elapsedMs": 17589,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-003",
+    "technicalCompleted": true,
+    "validationStatus": "invalid_output",
+    "elapsedMs": 24738,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-004",
+    "technicalCompleted": true,
+    "validationStatus": "needs_clarification",
+    "elapsedMs": 13824,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-005",
+    "technicalCompleted": true,
+    "validationStatus": "needs_clarification",
+    "elapsedMs": 16102,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  },
+  {
+    "caseId": "S1-006",
+    "technicalCompleted": true,
+    "validationStatus": "invalid_output",
+    "elapsedMs": 18527,
+    "error": null,
+    "visualReviewRequired": true,
+    "ocrPass": null,
+    "interpretationPass": null,
+    "criticalError": null,
+    "passed": null,
+    "notes": null
+  }
+]

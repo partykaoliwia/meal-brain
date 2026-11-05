@@ -1,0 +1,7 @@
+case_id,technical_completed,validation_status,elapsed_ms,ocr_pass,interpretation_pass,critical_error,passed,notes
+S1-001,true,invalid_output,25157,,,,,
+S1-002,true,invalid_output,16675,,,,,
+S1-003,true,invalid_output,31669,,,,,
+S1-004,true,not_recipe,4480,,,,,
+S1-005,true,not_recipe,4490,,,,,
+S1-006,true,invalid_output,18662,,,,,

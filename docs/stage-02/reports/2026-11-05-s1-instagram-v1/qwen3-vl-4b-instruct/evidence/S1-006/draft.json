@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "kingamszanik kluski leniwe",
+    "servings": 1,
+    "times": {
+      "total": {
+        "minMinutes": 0,
+        "maxMinutes": 0
+      },
+      "preparation": {
+        "minMinutes": 0,
+        "maxMinutes": 0
+      },
+      "cooking": {
+        "minMinutes": 1,
+        "maxMinutes": 2
+      },
+      "resting": {
+        "minMinutes": 0,
+        "maxMinutes": 0
+      }
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "twar\u00F3g chudego",
+        "amount": {
+          "kind": "exact",
+          "value": 125,
+          "min": 125,
+          "max": 125,
+          "unit": "g",
+          "text": "125 g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "125 g twarogu chudego"
+      },
+      {
+        "id": "i2",
+        "name": "jajko",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": 1,
+          "max": 1,
+          "unit": "jajko",
+          "text": "1 jajko"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 jajko"
+      },
+      {
+        "id": "i3",
+        "name": "m\u0105ki",
+        "amount": {
+          "kind": "exact",
+          "value": 60,
+          "min": 60,
+          "max": 60,
+          "unit": "g",
+          "text": "60 g"
+        },
+        "optional": false,
+        "qualifiers": [
+          "do obsypania"
+        ],
+        "sourceText": "60 g m\u0105ki \u002B ok. 3 g do obsypania"
+      },
+      {
+        "id": "i4",
+        "name": "bu\u0142ki tartej",
+        "amount": {
+          "kind": "exact",
+          "value": 8,
+          "min": 8,
+          "max": 8,
+          "unit": "g",
+          "text": "8 g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "8 g bu\u0142ki tartej"
+      },
+      {
+        "id": "i5",
+        "name": "mas\u0142a",
+        "amount": {
+          "kind": "exact",
+          "value": 10,
+          "min": 10,
+          "max": 10,
+          "unit": "g",
+          "text": "10 g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "10 g mas\u0142a"
+      },
+      {
+        "id": "i6",
+        "name": "cukru",
+        "amount": {
+          "kind": "exact",
+          "value": 5,
+          "min": 5,
+          "max": 5,
+          "unit": "g",
+          "text": "5 g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "5 g cukru"
+      },
+      {
+        "id": "i7",
+        "name": "cynamon",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "cynamon"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "cynamon"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "kluski wrzuci\u0107 do gotuj\u0105cej si\u0119 wody, jak wyp\u0142yn\u0105 ku g\u00F3rze to gotowa\u0107 jeszcze 1-2 minuty. nast\u0119pnie wrzuci\u0107 na patelni\u0119, doda\u0107 poni\u017Csze sk\u0142adniki i chwil\u0119 podsma\u017Cy\u0107:",
+        "ingredientIds": [
+          "i4",
+          "i5",
+          "i6",
+          "i7"
+        ],
+        "sourceText": "kluski wrzuci\u0107 do gotuj\u0105cej si\u0119 wody, jak wyp\u0142yn\u0105 ku g\u00F3rze to gotowa\u0107 jeszcze 1-2 minuty. nast\u0119pnie wrzuci\u0107 na patelni\u0119, doda\u0107 poni\u017Csze sk\u0142adniki i chwil\u0119 podsma\u017Cy\u0107:"
+      },
+      {
+        "id": "s2",
+        "text": "na wierzch doda\u0107 \u0142y\u017Ck\u0119 skyru i ciep\u0142e bor\u00F3wki",
+        "ingredientIds": [
+          "i8"
+        ],
+        "sourceText": "na wierzch doda\u0107 \u0142y\u017Ck\u0119 skyru i ciep\u0142e bor\u00F3wki"
+      }
+    ],
+    "conflicts": []
+  }
+}

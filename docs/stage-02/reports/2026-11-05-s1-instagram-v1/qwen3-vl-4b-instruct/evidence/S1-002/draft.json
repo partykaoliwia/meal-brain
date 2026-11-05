@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Makaron z pieczonym tososiem i serem feta",
+    "servings": 2,
+    "times": {
+      "total": {
+        "minMinutes": 25,
+        "maxMinutes": 25
+      },
+      "preparation": null,
+      "cooking": {
+        "minMinutes": 25,
+        "maxMinutes": 25
+      },
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "\u015Bwie\u017Cego tososia",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": 200,
+          "max": 200,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "200 g \u015Bwie\u017Cego tososia"
+      },
+      {
+        "id": "i2",
+        "name": "sera feta",
+        "amount": {
+          "kind": "exact",
+          "value": 75,
+          "min": 75,
+          "max": 75,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "75 g sera feta"
+      },
+      {
+        "id": "i3",
+        "name": "pomidork\u00F3w koktajlowych",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": 200,
+          "max": 200,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "200 g pomidork\u00F3w koktajlowych"
+      },
+      {
+        "id": "i4",
+        "name": "oliwy z oliwek",
+        "amount": {
+          "kind": "exact",
+          "value": 10,
+          "min": 10,
+          "max": 10,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "10 g oliwy z oliwek"
+      },
+      {
+        "id": "i5",
+        "name": "szpinaku",
+        "amount": {
+          "kind": "exact",
+          "value": 100,
+          "min": 100,
+          "max": 100,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "100 g szpinaku"
+      },
+      {
+        "id": "i6",
+        "name": "makaronu pe\u0142noziarnistego",
+        "amount": {
+          "kind": "exact",
+          "value": 100,
+          "min": 100,
+          "max": 100,
+          "unit": "g",
+          "text": "g"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "100 g makaronu pe\u0142noziarnistego"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Do naczynia \u017Caroodpornego prze\u0142\u00F3\u017C ryb\u0119, ser i pomidorki. Skrop oliw\u0105, dodaj czosnek granulowany, oregano, s\u00F3l i pieprz. Piecz w 200 stopniach przez ok. 25 minut. Zgnie\u0107 wszystkie sk\u0142adniki widelcem i wymieszaj. Dodaj szpinak, makaron i ponownie wymieszaj.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4",
+          "i5",
+          "i6"
+        ],
+        "sourceText": "Do naczynia \u017Caroodpornego prze\u0142\u00F3\u017C ryb\u0119, ser i pomidorki. Skrop oliw\u0105, dodaj czosnek granulowany, oregano, s\u00F3l i pieprz. Piecz w 200 stopniach przez ok. 25 minut. Zgnie\u0107 wszystkie sk\u0142adniki widelcem i wymieszaj. Dodaj szpinak, makaron i ponownie wymieszaj."
+      }
+    ],
+    "conflicts": []
+  }
+}

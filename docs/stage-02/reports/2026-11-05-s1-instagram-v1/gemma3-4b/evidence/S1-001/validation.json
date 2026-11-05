@@ -1,0 +1,18 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji.",
+    "times.total: podaj czas ca\u0142kowity."
+  ],
+  "reviewIssues": [
+    "ingredients[i1].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i2].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i3].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (pinch of salt).",
+    "ingredients[i4].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i5].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i6].amount.unit: jednostka cup nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i7].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (vanilla essence).",
+    "ingredients[i8].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (mini choc chips (measure with heart!))."
+  ]
+}

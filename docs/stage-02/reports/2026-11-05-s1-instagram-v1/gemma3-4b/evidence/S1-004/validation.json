@@ -1,0 +1,10 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji.",
+    "times.total: podaj czas ca\u0142kowity.",
+    "ingredients[i5].amount: podaj ilo\u015B\u0107 (Maliny)."
+  ],
+  "reviewIssues": []
+}

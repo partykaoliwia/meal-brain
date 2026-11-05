@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "easiest homemade protein bars",
+    "servings": null,
+    "times": {
+      "total": null,
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "almond flour",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": "cup",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 cup almond flour"
+      },
+      {
+        "id": "i2",
+        "name": "protein powder",
+        "amount": {
+          "kind": "exact",
+          "value": 0.375,
+          "min": null,
+          "max": null,
+          "unit": "cup",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "3/4 cup protein powder (I used @macr0mike cookie dough flav!)"
+      },
+      {
+        "id": "i3",
+        "name": "pinch of salt",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "pinch of salt"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "pinch of salt"
+      },
+      {
+        "id": "i4",
+        "name": "smooth peanut butter",
+        "amount": {
+          "kind": "exact",
+          "value": 0.5,
+          "min": null,
+          "max": null,
+          "unit": "cup",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1/2 cup smooth peanut butter"
+      },
+      {
+        "id": "i5",
+        "name": "maple syrup",
+        "amount": {
+          "kind": "exact",
+          "value": 0.25,
+          "min": null,
+          "max": null,
+          "unit": "cup",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1/4 cup maple syrup"
+      },
+      {
+        "id": "i6",
+        "name": "melted coconut oil",
+        "amount": {
+          "kind": "exact",
+          "value": 0.25,
+          "min": null,
+          "max": null,
+          "unit": "cup",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1/4 cup melted coconut oil"
+      },
+      {
+        "id": "i7",
+        "name": "vanilla essence",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "vanilla essence"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "vanilla essence"
+      },
+      {
+        "id": "i8",
+        "name": "mini choc chips",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "mini choc chips (measure with heart!)"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "mini choc chips (measure with heart!)"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Preheat oven to 350\u00B0F (175\u00B0C)",
+        "ingredientIds": [],
+        "sourceText": "Preheat oven to 350\u00B0F (175\u00B0C)"
+      },
+      {
+        "id": "s2",
+        "text": "In a bowl, combine almond flour, protein powder, and salt.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3"
+        ],
+        "sourceText": "In a bowl, combine almond flour, protein powder, and salt."
+      },
+      {
+        "id": "s3",
+        "text": "Add peanut butter, maple syrup, and coconut oil to the bowl. Mix well.",
+        "ingredientIds": [
+          "i4",
+          "i5",
+          "i6"
+        ],
+        "sourceText": "Add peanut butter, maple syrup, and coconut oil to the bowl. Mix well."
+      },
+      {
+        "id": "s4",
+        "text": "Stir in vanilla essence and mini choc chips.",
+        "ingredientIds": [
+          "i7",
+          "i8"
+        ],
+        "sourceText": "Stir in vanilla essence and mini choc chips."
+      }
+    ],
+    "conflicts": []
+  }
+}

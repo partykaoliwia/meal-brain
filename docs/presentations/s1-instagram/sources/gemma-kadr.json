@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": null,
+    "servings": null,
+    "times": {
+      "total": null,
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "czerwona fasola",
+        "amount": {
+          "kind": "exact",
+          "value": 400,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "czerwona fasola"
+      },
+      {
+        "id": "i2",
+        "name": "ry\u017C",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": "szklanki",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "ry\u017C"
+      },
+      {
+        "id": "i3",
+        "name": "czosnek",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "do smaku"
+      },
+      {
+        "id": "i4",
+        "name": "oliwa z oliwek",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "do smaku"
+      },
+      {
+        "id": "i5",
+        "name": "s\u00F3l",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "do smaku"
+      },
+      {
+        "id": "i6",
+        "name": "\u015Bwie\u017Cy koperek",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "do smaku"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Ugotuj ry\u017C zgodnie z instrukcj\u0105 na opakowaniu.",
+        "ingredientIds": [
+          "i2"
+        ],
+        "sourceText": "Ugotuj ry\u017C zgodnie z instrukcj\u0105 na opakowaniu."
+      },
+      {
+        "id": "s2",
+        "text": "Ugotuj czerwon\u0105 fasol\u0119 w wodzie.",
+        "ingredientIds": [
+          "i1"
+        ],
+        "sourceText": "Ugotuj czerwon\u0105 fasol\u0119 w wodzie."
+      },
+      {
+        "id": "s3",
+        "text": "Posiekaj czosnek i drobno posiekaj \u015Bwie\u017Cy koperek.",
+        "ingredientIds": [
+          "i3",
+          "i6"
+        ],
+        "sourceText": "Posiekaj czosnek i drobno posiekaj \u015Bwie\u017Cy koperek."
+      },
+      {
+        "id": "s4",
+        "text": "Odcedzon\u0105 fasol\u0119 w\u0142\u00F3\u017C do miski i dodaj posiekany czosnek, oliw\u0119 z oliwek, s\u00F3l i posiekany koperek.",
+        "ingredientIds": [
+          "i1",
+          "i3",
+          "i4",
+          "i5",
+          "i6"
+        ],
+        "sourceText": "Odcedzon\u0105 fasol\u0119 w\u0142\u00F3\u017C do miski i dodaj posiekany czosnek, oliw\u0119 z oliwek, s\u00F3l i posiekany koperek."
+      }
+    ],
+    "conflicts": []
+  }
+}

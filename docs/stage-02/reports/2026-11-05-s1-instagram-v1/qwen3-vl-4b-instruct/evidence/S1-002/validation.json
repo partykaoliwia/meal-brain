@@ -1,0 +1,13 @@
+{
+  "status": "invalid_output",
+  "errors": [
+    "ingredients[i1].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i2].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i3].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i4].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i5].amount: pola nie odpowiadaj\u0105 kind=exact.",
+    "ingredients[i6].amount: pola nie odpowiadaj\u0105 kind=exact."
+  ],
+  "missingFields": [],
+  "reviewIssues": []
+}

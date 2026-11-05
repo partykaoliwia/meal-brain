@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "kingszanak kluski leniwe",
+    "servings": null,
+    "times": {
+      "total": null,
+      "preparation": null,
+      "cooking": {
+        "minMinutes": 1,
+        "maxMinutes": 2
+      },
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "twar\u00F3g chudego",
+        "amount": {
+          "kind": "exact",
+          "value": 125,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "125 g twarogu chudego"
+      },
+      {
+        "id": "i2",
+        "name": "jajko",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 jajko"
+      },
+      {
+        "id": "i3",
+        "name": "m\u0105ka",
+        "amount": {
+          "kind": "exact",
+          "value": 60,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": "ok. 3 g do obsypania"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "60 g m\u0105ki \u002B ok. 3 g do obsypania"
+      },
+      {
+        "id": "i4",
+        "name": "bu\u0142ka tartej",
+        "amount": {
+          "kind": "exact",
+          "value": 8,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "8 g bu\u0142ki tartej"
+      },
+      {
+        "id": "i5",
+        "name": "mas\u0142o",
+        "amount": {
+          "kind": "exact",
+          "value": 10,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "10 g mas\u0142a"
+      },
+      {
+        "id": "i6",
+        "name": "cukier",
+        "amount": {
+          "kind": "exact",
+          "value": 5,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "5 g cukru"
+      },
+      {
+        "id": "i7",
+        "name": "cynamon",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "cynamon"
+      },
+      {
+        "id": "i8",
+        "name": "\u0142y\u017Cka sypu",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "\u0142y\u017Ck\u0119 sypu"
+      },
+      {
+        "id": "i9",
+        "name": "bor\u00F3wki",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "ciep\u0142e bor\u00F3wki"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "kluski wrzuci\u0107 do gotuj\u0105cej si\u0119 wody, jak wyp\u0142yn\u0105 ku g\u00F3rze, to gotowa\u0107 jeszcze 1\u20132 minuty.",
+        "ingredientIds": [
+          "i1",
+          "i2",
+          "i3"
+        ],
+        "sourceText": "kluski wrzuci\u0107 do gotuj\u0105cej si\u0119 wody, jak wyp\u0142yn\u0105 ku g\u00F3rze, to gotowa\u0107 jeszcze 1\u20132 minuty"
+      },
+      {
+        "id": "s2",
+        "text": "nast\u0119pnie wrzuci\u0107 na patelni\u0119, doda\u0107 poni\u017Csze sk\u0142adniki i chwil\u0119 podsma\u017Cy\u0107:",
+        "ingredientIds": [
+          "i4",
+          "i5",
+          "i6",
+          "i7"
+        ],
+        "sourceText": "nast\u0119pnie wrzuci\u0107 na patelni\u0119, doda\u0107 poni\u017Csze sk\u0142adniki i chwil\u0119 podsma\u017Cy\u0107:"
+      }
+    ],
+    "conflicts": []
+  }
+}

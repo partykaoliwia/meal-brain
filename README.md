@@ -13,6 +13,10 @@ Projekt jest rozwijany stopniowo wraz z kolejnymi etapami zajęć i realizacji.
 ## Dokumentacja
 
 - [Wizja projektu](project-vision.md)
+- [S1 — screeny, modele, uruchomienie i ocena importu obrazów](docs/stage-02/s1-images-how-to.md)
+- [S1 — pierwsze wyniki Instagrama: Gemma 0/6, Qwen 1/6, brak poprawnego pełnego importu](docs/stage-02/reports/2026-11-05-s1-instagram-v1/report.md)
+- [S1 — szablon raportu porównania modeli](docs/stage-02/s1-images-report-template.md)
+- [S1 — miejsce na sześć screenów Patrycji](evals/s1-images-v1/images/README.md)
 - [Propozycja wspólnego formatu szkicu przepisu — S1 i S3](docs/contracts/recipe-draft-v1.md)
 - [S3 — podsumowanie pracy Oliwii na etap 2](docs/stage-02/s3-stage-02-summary.md)
 - [Etap 2 — przekazanie dla Marii i Patrycji, przykłady i uruchomienie](docs/stage-02/team-handoff.md)
