@@ -14,6 +14,9 @@ public static class RecipeDraftValidator
           "szklanka", "szklanki", "szklanek", "ząbek", "ząbki", "ząbków", "kromka", "kromki", "kromek",
           "plaster", "plastry", "plastrów" };
 
+    public static bool IsSupportedUnit(string unit) => Units.Contains(unit);
+    public static IEnumerable<string> SupportedUnits => Units;
+
     public static DraftValidation Validate(RecipeExtractionDocument document, string? originalText = null)
     {
         var errors = new List<string>();

@@ -88,6 +88,73 @@ public sealed class DraftSession
             Describe(ingredient.Amount), Describe(amount), userText);
     }
 
+    // Ogólna wersja SetTotalTime dla narzędzia set_time (Etap 3).
+    public DraftUpdateResult SetTime(string field, MinuteRange range, string userText)
+    {
+        var recipe = Recipe;
+        if (recipe is null) return DraftUpdateResult.Rejected("Ten import nie zawiera przepisu.");
+        var conflictType = field switch
+        {
+            "total" => "totalTime", "preparation" => "preparationTime", "cooking" => "cookingTime", "resting" => "restingTime", _ => null
+        };
+        if (conflictType is null) return DraftUpdateResult.Rejected($"Nieznane pole czasu {field}. Dozwolone: total, preparation, cooking, resting.");
+        if (range.MinMinutes < 0 || range.MaxMinutes < range.MinMinutes)
+            return DraftUpdateResult.Rejected("Czas musi spełniać 0 <= minMinutes <= maxMinutes.");
+        if (FindConflict(c => c.Target.Type == conflictType) is { } conflict)
+            return DraftUpdateResult.Rejected($"Czas {field} ma nierozstrzygnięty konflikt {conflict.Id}.");
+        var t = recipe.Times;
+        var (times, old) = field switch
+        {
+            "total" => (t with { Total = range }, t.Total),
+            "preparation" => (t with { Preparation = range }, t.Preparation),
+            "cooking" => (t with { Cooking = range }, t.Cooking),
+            _ => (t with { Resting = range }, t.Resting)
+        };
+        return Apply(recipe with { Times = times }, "setTime", $"times.{field}", Describe(old), Describe(range), userText);
+    }
+
+    // Składnik dodany w rozmowie nie ma cytatu w źródle. Jego sourceText to wypowiedź użytkowniczki,
+    // a uwaga walidatora o brakującym cytacie jest od razu oznaczona jako przejrzana, bo pochodzi od niej.
+    public DraftUpdateResult AddIngredient(string name, AmountDraft amount, bool optional, string userText)
+    {
+        var recipe = Recipe;
+        if (recipe is null) return DraftUpdateResult.Rejected("Ten import nie zawiera przepisu.");
+        if (string.IsNullOrWhiteSpace(name)) return DraftUpdateResult.Rejected("Nazwa składnika nie może być pusta.");
+        if (recipe.Ingredients.Any(i => string.Equals(i.Name?.Trim(), name.Trim(), StringComparison.OrdinalIgnoreCase)))
+            return DraftUpdateResult.Rejected($"Składnik {name} już jest w szkicu. Zmień jego ilość zamiast dodawać drugi raz.");
+        var next = recipe.Ingredients.Select(i => int.TryParse(i.Id[1..], out var n) ? n : 0).DefaultIfEmpty(0).Max() + 1;
+        var id = $"i{next}";
+        var ingredient = new IngredientDraft
+        {
+            Id = id, Name = name.Trim(), Amount = amount, Optional = optional, Qualifiers = [],
+            SourceText = string.IsNullOrWhiteSpace(userText) ? name.Trim() : userText.Trim()
+        };
+        var result = Apply(recipe with { Ingredients = [.. recipe.Ingredients, ingredient] }, "addIngredient",
+            $"ingredients[{id}]", null, $"{name.Trim()} — {Describe(amount)}", userText);
+        if (result.Applied)
+            foreach (var issue in Validation.ReviewIssues.Where(i => i.StartsWith($"ingredients[{id}].sourceText", StringComparison.Ordinal)))
+                acknowledgedReviewIssues.Add(issue);
+        return result.Applied ? DraftUpdateResult.Ok($"Dodano {id}: {name.Trim()} — {Describe(amount)} (rewizja {Revision}).") : result;
+    }
+
+    // Usuwa składnik i jego odniesienia z kroków. Kroki zostają, bo ich tekst pochodzi ze źródła.
+    public DraftUpdateResult RemoveIngredient(string ingredientId, string userText)
+    {
+        var recipe = Recipe;
+        if (recipe is null) return DraftUpdateResult.Rejected("Ten import nie zawiera przepisu.");
+        var ingredient = recipe.Ingredients.FirstOrDefault(i => i.Id == ingredientId);
+        if (ingredient is null) return DraftUpdateResult.Rejected($"Nie ma składnika {ingredientId}.");
+        if (FindConflict(c => c.Target.Type == "ingredientAmount" && c.Target.Id == ingredientId) is { } conflict)
+            return DraftUpdateResult.Rejected($"Składnik {ingredientId} ma nierozstrzygnięty konflikt {conflict.Id}.");
+        var updated = recipe with
+        {
+            Ingredients = recipe.Ingredients.Where(i => i.Id != ingredientId).ToArray(),
+            Steps = recipe.Steps.Select(s => s with { IngredientIds = s.IngredientIds.Where(id => id != ingredientId).ToArray() }).ToArray()
+        };
+        return Apply(updated, "removeIngredient", $"ingredients[{ingredientId}]",
+            $"{ingredient.Name} — {Describe(ingredient.Amount)}", null, userText);
+    }
+
     public DraftUpdateResult ResolveAmountConflict(string conflictId, AmountDraft amount, string userText)
     {
         var recipe = Recipe;
@@ -170,7 +237,7 @@ public sealed class DraftSession
         history.Add(new(Revision, operation, target, oldValue, newValue, userText));
         if (resolved is not null) resolvedConflicts.Add(new(Revision, resolved, newValue ?? "", userText));
         var approvalNote = ApprovedRevision is { } approved ? $" Zgoda dla rewizji {approved} nie obejmuje tej zmiany." : "";
-        return DraftUpdateResult.Ok($"Zapisano {target} = {newValue} (rewizja {Revision}).{approvalNote}");
+        return DraftUpdateResult.Ok($"Zapisano {target} = {newValue ?? "(usunięto)"} (rewizja {Revision}).{approvalNote}");
     }
 
     private ConflictDraft? FindConflict(Func<ConflictDraft, bool> predicate) => Recipe?.Conflicts.FirstOrDefault(predicate);
