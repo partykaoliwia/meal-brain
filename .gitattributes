@@ -3,6 +3,7 @@
 /src/MealBrain.ModelLab/Recipes/extraction-prompt-*.txt text eol=lf
 /src/MealBrain.ModelLab/Recipes/image-extraction-prompt-*.txt text eol=lf
 /docs/contracts/recipe-draft-v1.schema.json text eol=lf
+/docs/contracts/recipe-draft-v1.strict.schema.json text eol=lf
 # Keep new S1 protocols portable; leave historical report files under their existing rules.
 /evals/s1-images-*/**/*.json text eol=lf
 # Preserve exact bytes of the new evidence archives and their hash manifests.
