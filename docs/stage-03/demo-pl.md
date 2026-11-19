@@ -22,8 +22,10 @@ Pierwsza odpowiedź trwa dłużej (ładowanie modelu).
 ## Scenariusz (przepis „ogórki”, brakuje porcji i ilości jogurtu)
 
 1. `/case ogorki` — pokaż źródło i szkic: jogurt ma `BRAK ILOŚCI`, brak porcji.
-2. `Jogurtu daj tyle co zwykle` — **przypadek błędu**: widać `[tool] set_ingredient_amount -> BŁĄD: ilość opisowa
-   „tyle co zwykle” jest niedozwolona...`. Model dostaje błąd i dopytuje o konkretną ilość. Szkic się nie zmienił (`/show`).
+2. `Jogurtu daj tyle co zwykle` — model sam dopytuje o konkretną ilość (przykład z uruchomienia: „Podaj proszę
+   konkretną ilość i jednostkę”) i nie zgaduje. Szkic się nie zmienił (`/show`).
+   **Przypadek błędu z walidatora** (wymuszony): `Jogurtu daj 0 g` albo `Jogurtu daj 150 kilogramoidów` — widać
+   `[tool] set_ingredient_amount -> BŁĄD: ...`, model dostaje błąd i tłumaczy. Szkic bez zmian.
 3. `Jogurtu 150 g` — `[tool] set_ingredient_amount -> OK`, rewizja rośnie.
 4. `Dodaj sól, 1 łyżeczka` — `add_ingredient`. Potem `Usuń sól` — `remove_ingredient`.
 5. `Ustaw czas całkowity na 10 minut` — `set_time`.

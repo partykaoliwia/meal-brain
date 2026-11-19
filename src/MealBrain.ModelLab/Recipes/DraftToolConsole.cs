@@ -11,7 +11,9 @@ public static class DraftToolConsole
     public static async Task<int> RunAsync(string model)
     {
         var prompt = await File.ReadAllTextAsync(Path.Combine(AppContext.BaseDirectory, "draft-tools-prompt-v1.txt"));
-        var ollama = new OllamaApiClient(new Uri("http://localhost:11434"), model);
+        // Domyślny timeout HttpClient (100 s) jest za krótki przy pierwszym ładowaniu modelu.
+        using var http = new HttpClient { BaseAddress = new Uri("http://localhost:11434"), Timeout = TimeSpan.FromMinutes(10) };
+        var ollama = new OllamaApiClient(http, model);
         IChatClient chat = new ChatClientBuilder(ollama).UseFunctionInvocation().Build();
         var options = new ChatOptions { Temperature = 0 };
 
