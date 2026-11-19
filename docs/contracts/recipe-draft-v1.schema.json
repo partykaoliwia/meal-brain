@@ -1,0 +1,353 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RecipeDraft v1",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "inputKind": {
+      "type": "string",
+      "enum": [
+        "recipe",
+        "not_recipe"
+      ]
+    },
+    "rejectionReason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recipe": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/recipe"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "inputKind",
+    "rejectionReason",
+    "recipe"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "duration": {
+      "type": "object",
+      "properties": {
+        "minMinutes": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maxMinutes": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "minMinutes",
+        "maxMinutes"
+      ],
+      "additionalProperties": false
+    },
+    "times": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/duration"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "preparation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/duration"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cooking": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/duration"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "resting": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/duration"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "total",
+        "preparation",
+        "cooking",
+        "resting"
+      ],
+      "additionalProperties": false
+    },
+    "amount": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "exact",
+            "range",
+            "text",
+            "unknown"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "value",
+        "min",
+        "max",
+        "unit",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "ingredient": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^i[1-9][0-9]*$"
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "amount": {
+          "$ref": "#/$defs/amount"
+        },
+        "optional": {
+          "type": "boolean"
+        },
+        "qualifiers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceText": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "amount",
+        "optional",
+        "qualifiers",
+        "sourceText"
+      ],
+      "additionalProperties": false
+    },
+    "step": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^s[1-9][0-9]*$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ingredientIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceText": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "ingredientIds",
+        "sourceText"
+      ],
+      "additionalProperties": false
+    },
+    "target": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "ingredientAmount",
+            "servings",
+            "totalTime",
+            "preparationTime",
+            "cookingTime",
+            "restingTime"
+          ]
+        },
+        "id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "properties": {
+        "valueText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceText": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "valueText",
+        "sourceText"
+      ],
+      "additionalProperties": false
+    },
+    "conflict": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^c[1-9][0-9]*$"
+        },
+        "target": {
+          "$ref": "#/$defs/target"
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "minItems": 2
+        }
+      },
+      "required": [
+        "id",
+        "target",
+        "candidates"
+      ],
+      "additionalProperties": false
+    },
+    "recipe": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "servings": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "times": {
+          "$ref": "#/$defs/times"
+        },
+        "ingredients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ingredient"
+          }
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/step"
+          }
+        },
+        "conflicts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/conflict"
+          }
+        }
+      },
+      "required": [
+        "title",
+        "servings",
+        "times",
+        "ingredients",
+        "steps",
+        "conflicts"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

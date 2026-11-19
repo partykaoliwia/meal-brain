@@ -1,0 +1,69 @@
+{
+  "assessmentVersion": 1,
+  "reviewer": "assistant",
+  "reviewDate": "2026-11-04",
+  "runId": "20261104-192009-extract-fbd2cddad3674b1586cc896dedc71c64",
+  "variant": "s3-extraction-v2",
+  "validationVersionAtRun": "recipe-draft-validation-v2",
+  "model": "gemma4:12b",
+  "dataUse": "development_regression",
+  "expectationsDefinedBeforeRun": true,
+  "sourcesByteIdenticalToPreviousRun": true,
+  "summary": {
+    "imports": 2,
+    "completeApiResponses": 2,
+    "deserializedDocuments": 2,
+    "domainValidDocuments": 2,
+    "targetedModelDefectsResolvedInObservedOutputs": 2,
+    "semanticPasses": 2,
+    "exactExpectedApplicationResultsAtRun": 1,
+    "elapsedMedianMs": 219255,
+    "elapsedTotalMs": 438510,
+    "repetitionsPerCase": 1
+  },
+  "cases": [
+    {
+      "inputId": 1,
+      "caseId": "MB-005",
+      "semanticVerdict": "pass",
+      "applicationVerdictAtRun": "pass",
+      "originalValidation": { "status": "needs_clarification", "errors": 0, "missingFields": 1, "reviewIssues": 0 },
+      "observations": [
+        "All five ingredients, servings 2 and total time 15 min preserved.",
+        "Effective tomato amount is unknown, with unit g and candidates 150 g and 200 g.",
+        "Application asks only for conflict resolution."
+      ],
+      "timing": { "elapsedMs": 239560, "loadMs": 27034.324, "promptEvalMs": 108715.382, "evalMs": 103315.840, "promptTokens": 3374, "outputTokens": 1088 }
+    },
+    {
+      "inputId": 2,
+      "caseId": "S3-TOAST-001",
+      "semanticVerdict": "pass",
+      "applicationVerdictAtRun": "extra_review_issue_due_to_unit_dictionary",
+      "originalValidation": { "status": "needs_clarification", "errors": 0, "missingFields": 1, "reviewIssues": 2 },
+      "observations": [
+        "Cooking duration 2 min is now present in both times.cooking and the step.",
+        "Total upper bound 10 min, unknown servings and all three ingredients preserved.",
+        "Correct source form kromki generated an unnecessary unsupported-unit warning.",
+        "Amount text Trochę still correctly requires human review under application policy."
+      ],
+      "timing": { "elapsedMs": 198950, "loadMs": 23778.578, "promptEvalMs": 102983.802, "evalMs": 69417.323, "promptTokens": 3293, "outputTokens": 671 }
+    }
+  ],
+  "postReviewChanges": {
+    "activeVariant": "s3-extraction-v2",
+    "validationVersion": "recipe-draft-validation-v3",
+    "promptChanged": false,
+    "schemaChanged": false,
+    "capturedDocumentsChanged": false,
+    "modelCallsMade": 0,
+    "offlineChecksPassed": true,
+    "exactExpectedApplicationResultsAfterOfflineRevalidation": 2,
+    "notes": [
+      "Known count-unit inflections accepted without numerical conversion or output rewriting.",
+      "Original invalid conflict from extraction v1 remains rejected.",
+      "Six new inputs and expectations frozen for s3-extraction-check-v1.",
+      "Automatic extraction suite verified with fake HTTP including a failed request and an invalid model document."
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "not_recipe",
+  "rejectionReason": "The input is an advertisement for a cooking workshop, not a recipe.",
+  "recipe": null
+}

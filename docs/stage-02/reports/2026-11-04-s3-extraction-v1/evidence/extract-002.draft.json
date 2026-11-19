@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Tortille z pomidorami i mozzarell\u0105",
+    "servings": 2,
+    "times": {
+      "total": {
+        "minMinutes": 15,
+        "maxMinutes": 15
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "tortille",
+        "amount": {
+          "kind": "exact",
+          "value": 2,
+          "min": null,
+          "max": null,
+          "unit": "szt.",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "2 tortille"
+      },
+      {
+        "id": "i2",
+        "name": "pomidor\u00F3w",
+        "amount": {
+          "kind": "range",
+          "value": null,
+          "min": 150,
+          "max": 200,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "150 g pomidor\u00F3w"
+      },
+      {
+        "id": "i3",
+        "name": "mozzarelli",
+        "amount": {
+          "kind": "exact",
+          "value": 125,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "125 g mozzarelli"
+      },
+      {
+        "id": "i4",
+        "name": "oliwy",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": "\u0142y\u017Cka",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 \u0142y\u017Cka oliwy"
+      },
+      {
+        "id": "i5",
+        "name": "czosnku",
+        "amount": {
+          "kind": "exact",
+          "value": 5,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [
+          "drobno posiekany"
+        ],
+        "sourceText": "5 g drobno posiekanego czosnku"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Pokr\u00F3j pomidory i mozzarell\u0119.",
+        "ingredientIds": [
+          "i2",
+          "i3"
+        ],
+        "sourceText": "1. Pokr\u00F3j 200 g pomidor\u00F3w i mozzarell\u0119."
+      },
+      {
+        "id": "s2",
+        "text": "Wymieszaj je z oliw\u0105 i czosnkiem.",
+        "ingredientIds": [
+          "i4",
+          "i5"
+        ],
+        "sourceText": "2. Wymieszaj je z oliw\u0105 i 5 g drobno posiekanego czosnku."
+      },
+      {
+        "id": "s3",
+        "text": "Podgrzej tortille na suchej patelni, na\u0142\u00F3\u017C farsz i zwi\u0144.",
+        "ingredientIds": [
+          "i1"
+        ],
+        "sourceText": "3. Podgrzej tortille na suchej patelni, na\u0142\u00F3\u017C farsz i zwi\u0144."
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "c1",
+        "target": {
+          "type": "ingredientAmount",
+          "id": "i2"
+        },
+        "candidates": [
+          {
+            "valueText": "150 g",
+            "sourceText": "150 g pomidor\u00F3w"
+          },
+          {
+            "valueText": "200 g",
+            "sourceText": "Pokr\u00F3j 200 g pomidor\u00F3w i mozzarell\u0119."
+          }
+        ]
+      }
+    ]
+  }
+}

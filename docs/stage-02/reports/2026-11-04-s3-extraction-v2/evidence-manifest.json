@@ -1,0 +1,42 @@
+[
+  {
+    "file": "extract-001.draft.json",
+    "sha256": "38C19DA593F32718157F1F0778295F23B382DF04FD9BFFD319EA4F0096B8098A",
+    "bytes": 3490
+  },
+  {
+    "file": "extract-001.source.txt",
+    "sha256": "122A8F04CEE96B1D8854A3E94B5DD35A143B792C374655D9A8B244811EDFD091",
+    "bytes": 413
+  },
+  {
+    "file": "extract-001.validation.json",
+    "sha256": "77B9552106573399BF1F043BDBFDBF855A49198D2192E2122A03EBF771994768",
+    "bytes": 182
+  },
+  {
+    "file": "extract-002.draft.json",
+    "sha256": "1B932FA42BA7324C632CFB155A180309F963BC5460EA38A419550466AE92A991",
+    "bytes": 2192
+  },
+  {
+    "file": "extract-002.source.txt",
+    "sha256": "A340B20FF08B111E2B83EB2BEEE3514A60E2E75ECEA93034BC5A72B3801A7BB3",
+    "bytes": 240
+  },
+  {
+    "file": "extract-002.validation.json",
+    "sha256": "403131C08C08B199B12706C0EEEAB01BFE5836AC0CC751D0AC8694436C1A7194",
+    "bytes": 340
+  },
+  {
+    "file": "metadata.json",
+    "sha256": "909E679E2A58D113040F73C56602EE151FCEC1AA073AD13E3373D9F65DAAB12E",
+    "bytes": 19010
+  },
+  {
+    "file": "turns.jsonl",
+    "sha256": "22C0918416FD33CF3B0DB40A4455A5BA22B1FEB2921DEF0EDC1490FB5ECC0A3D",
+    "bytes": 47499
+  }
+]

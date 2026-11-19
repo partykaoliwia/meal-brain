@@ -1,0 +1,11 @@
+{
+  "status": "needs_clarification",
+  "errors": [],
+  "missingFields": [
+    "servings: podaj liczb\u0119 porcji."
+  ],
+  "reviewIssues": [
+    "ingredients[i2].amount.unit: jednostka plastry nie jest jeszcze obs\u0142ugiwana.",
+    "ingredients[i3].amount.text: ilo\u015B\u0107 opisowa wymaga przegl\u0105du (Troch\u0119)."
+  ]
+}

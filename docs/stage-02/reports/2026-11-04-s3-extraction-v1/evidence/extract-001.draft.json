@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "inputKind": "recipe",
+  "rejectionReason": null,
+  "recipe": {
+    "title": "Makaron ze szpinakiem",
+    "servings": null,
+    "times": {
+      "total": {
+        "minMinutes": 20,
+        "maxMinutes": 20
+      },
+      "preparation": null,
+      "cooking": null,
+      "resting": null
+    },
+    "ingredients": [
+      {
+        "id": "i1",
+        "name": "makaron",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "makaron"
+      },
+      {
+        "id": "i2",
+        "name": "szpinak",
+        "amount": {
+          "kind": "exact",
+          "value": 200,
+          "min": null,
+          "max": null,
+          "unit": "g",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "200 g szpinaku"
+      },
+      {
+        "id": "i3",
+        "name": "\u015Bmietanka",
+        "amount": {
+          "kind": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "\u015Bmietanka"
+      },
+      {
+        "id": "i4",
+        "name": "oliwa",
+        "amount": {
+          "kind": "exact",
+          "value": 1,
+          "min": null,
+          "max": null,
+          "unit": "\u0142y\u017Cka",
+          "text": null
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "1 \u0142y\u017Cka oliwy"
+      },
+      {
+        "id": "i5",
+        "name": "s\u00F3l",
+        "amount": {
+          "kind": "text",
+          "value": null,
+          "min": null,
+          "max": null,
+          "unit": null,
+          "text": "do smaku"
+        },
+        "optional": false,
+        "qualifiers": [],
+        "sourceText": "s\u00F3l do smaku"
+      }
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Ugotuj makaron.",
+        "ingredientIds": [
+          "i1"
+        ],
+        "sourceText": "Ugotuj makaron."
+      },
+      {
+        "id": "s2",
+        "text": "Na oliwie poddu\u015B szpinak, dodaj \u015Bmietank\u0119 i chwil\u0119 podgrzej.",
+        "ingredientIds": [
+          "i4",
+          "i2",
+          "i3"
+        ],
+        "sourceText": "Na oliwie poddu\u015B szpinak, dodaj \u015Bmietank\u0119 i chwil\u0119 podgrzej."
+      },
+      {
+        "id": "s3",
+        "text": "Wymieszaj sos z makaronem i dopraw sol\u0105 do smaku.",
+        "ingredientIds": [
+          "i1",
+          "i5"
+        ],
+        "sourceText": "Wymieszaj sos z makaronem i dopraw sol\u0105 do smaku."
+      }
+    ],
+    "conflicts": []
+  }
+}

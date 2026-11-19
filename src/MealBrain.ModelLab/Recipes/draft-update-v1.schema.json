@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DraftUpdateProposal v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["intent", "actions", "clarification"],
+  "properties": {
+    "intent": { "enum": ["update", "approve", "decline", "show", "other"] },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "ingredientId", "conflictId", "servings", "amount", "minutes", "reviewIssue"],
+        "properties": {
+          "type": { "enum": ["setServings", "setTotalTime", "setIngredientAmount", "resolveConflict", "acknowledgeReview"] },
+          "ingredientId": { "type": ["string", "null"] },
+          "conflictId": { "type": ["string", "null"] },
+          "servings": { "type": ["integer", "null"] },
+          "amount": {
+            "anyOf": [
+              { "type": "null" },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["kind", "value", "min", "max", "unit", "text"],
+                "properties": {
+                  "kind": { "enum": ["exact", "range", "text", "unknown"] },
+                  "value": { "type": ["number", "null"] },
+                  "min": { "type": ["number", "null"] },
+                  "max": { "type": ["number", "null"] },
+                  "unit": { "type": ["string", "null"] },
+                  "text": { "type": ["string", "null"] }
+                }
+              }
+            ]
+          },
+          "minutes": {
+            "anyOf": [
+              { "type": "null" },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["minMinutes", "maxMinutes"],
+                "properties": {
+                  "minMinutes": { "type": "number" },
+                  "maxMinutes": { "type": "number" }
+                }
+              }
+            ]
+          },
+          "reviewIssue": { "type": ["integer", "null"] }
+        }
+      }
+    },
+    "clarification": { "type": ["string", "null"] }
+  }
+}
