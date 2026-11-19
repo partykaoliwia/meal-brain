@@ -23,7 +23,7 @@ if (args.Length > 0 && args[0] == "--extract")
 }
 
 if (args.Length > 0 && args[0] == "--tools")
-    return await DraftToolConsole.RunAsync(args.ElementAtOrDefault(1) ?? "gemma4:12b");
+    return await DraftToolConsole.RunAsync(args.Skip(1).ToArray());
 
 if (args.Length > 0 && args[0] == "--draft")
 {

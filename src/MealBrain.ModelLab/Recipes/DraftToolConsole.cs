@@ -8,13 +8,43 @@ public static class DraftToolConsole
 {
     private static readonly Dictionary<string, int> Cases = new() { ["ryz"] = 1, ["ogorki"] = 2, ["kanapki"] = 3, ["sos"] = 6 };
 
-    public static async Task<int> RunAsync(string model)
+    public const string PcssEndpoint = "https://llm.hpc.psnc.pl/v1";
+
+    // Użycie: --tools [model] [--provider ollama|pcss] [--endpoint url]. PCSS: klucz w zmiennej PCSS_API_KEY.
+    public static async Task<int> RunAsync(string[] args)
     {
+        string? model = null, provider = "ollama", endpoint = null;
+        for (var i = 0; i < args.Length; i++)
+        {
+            if (args[i] == "--provider" && i + 1 < args.Length) provider = args[++i];
+            else if (args[i] == "--endpoint" && i + 1 < args.Length) endpoint = args[++i];
+            else model ??= args[i];
+        }
+        if (provider is not ("ollama" or "pcss")) { Console.WriteLine("Nieznany provider. Dostępne: ollama, pcss."); return 1; }
         var prompt = await File.ReadAllTextAsync(Path.Combine(AppContext.BaseDirectory, "draft-tools-prompt-v1.txt"));
         // Domyślny timeout HttpClient (100 s) jest za krótki przy pierwszym ładowaniu modelu.
         using var http = new HttpClient { BaseAddress = new Uri("http://localhost:11434"), Timeout = TimeSpan.FromMinutes(10) };
-        var ollama = new OllamaApiClient(http, model);
-        IChatClient chat = new ChatClientBuilder(ollama).UseFunctionInvocation().Build();
+        IChatClient inner;
+        if (provider == "pcss")
+        {
+            var key = Environment.GetEnvironmentVariable("PCSS_API_KEY");
+            if (string.IsNullOrWhiteSpace(key))
+            {
+                Console.WriteLine("Brak zmiennej środowiskowej PCSS_API_KEY w tym procesie. Ustaw ją w tym samym oknie PowerShell, z którego uruchamiasz program.");
+                return 1;
+            }
+            model ??= "DeepSeek-V3.1";
+            var client = new OpenAI.OpenAIClient(new System.ClientModel.ApiKeyCredential(key),
+                new OpenAI.OpenAIClientOptions { Endpoint = new Uri(endpoint ?? PcssEndpoint), NetworkTimeout = TimeSpan.FromMinutes(5) });
+            inner = client.GetChatClient(model).AsIChatClient();
+        }
+        else
+        {
+            model ??= "gemma4:12b";
+            inner = new OllamaApiClient(http, model);
+        }
+        Console.WriteLine($"Provider: {provider}, model: {model}");
+        IChatClient chat = new ChatClientBuilder(inner).UseFunctionInvocation().Build();
         var options = new ChatOptions { Temperature = 0 };
 
         DraftSession? session = null;
